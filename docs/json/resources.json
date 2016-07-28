@@ -1,0 +1,13 @@
+[
+	{ "id": "a", "title": "Бокс №1", "description": "Развал схождение, вибростенд"},
+	{ "id": "b", "title": "Бокс №2", "eventColor": "green" },
+	{ "id": "c", "title": "Бокс №3", "eventColor": "orange" },
+	{ "id": "d", "title": "Бокс №4", "children": [
+		{ "id": "d1", "title": "Room D1" },
+		{ "id": "d2", "title": "Room D2" }
+	] },
+	{ "id": "e", "title": "Бокс №5" },
+	{ "id": "f", "title": "Бокс №6", "eventColor": "red" },
+	{ "id": "g", "title": "Бокс №7" },
+	{ "id": "h", "title": "Бокс №8" }
+]

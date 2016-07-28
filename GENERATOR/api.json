@@ -1,0 +1,60 @@
+{
+  "routes": {
+    "routeName": [
+      "typeOfWork",
+      "status"
+    ],
+    "controllerPath": "../controllers",
+    "routerPath": "../routes",
+    "requiresHeader": "templates/routes/require.tpl",
+    "routesFunctions": {
+      "findAll": "templates/routes/findAll.tpl",
+      "findById": "templates/routes/findById.tpl",
+      "add": "templates/routes/add.tpl",
+      "update": "templates/routes/update.tpl",
+      "delete": "templates/routes/delete.tpl"
+    },
+    "routesMiddleware": [
+      {
+        "type": "get",
+        "path": "/",
+        "method": "find",
+        "scope": "All"
+      },
+      {
+        "type": "get",
+        "path": "/:id",
+        "method": "find",
+        "scope": "ById"
+      },
+      {
+        "type": "post",
+        "path": "/",
+        "method": "add",
+        "scope": ""
+      },
+      {
+        "type": "put",
+        "path": "/:id",
+        "method": "update",
+        "scope": ""
+      },
+      {
+        "type": "delete",
+        "path": "/:id",
+        "method": "delete",
+        "scope": ""
+      }
+    ]
+  },
+  "controllers": {
+    "requiresHeader": "templates/controllers/require.tpl",
+    "controllerFunctions": {
+      "findAll": "templates/controllers/findAll.tpl",
+      "findById": "templates/controllers/findById.tpl",
+      "add": "templates/controllers/add.tpl",
+      "update": "templates/controllers/update.tpl",
+      "delete": "templates/controllers/delete.tpl"
+    }
+  }
+}

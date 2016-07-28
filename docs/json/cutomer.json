@@ -1,0 +1,9 @@
+{
+  "name": "Петров Денис Васильевич",
+  "phone": "89674325656",
+  "vin": "UI78GT53DFRT56479",
+  "DriverLicenseNumber": "з324ку96",
+  "Mileage": "100002",
+  "createOwner": ObjectId("5788786c9023171f18b9a486"),
+  "createDate" : "2016-07-15T05:45:16"
+}

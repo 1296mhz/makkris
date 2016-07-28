@@ -1,0 +1,16 @@
+[
+  {
+    "addEvent":
+    {
+      "createOwner": "ObjectId",
+      "createDate": "String"
+    }
+  },
+  {
+    "updateEvent":
+    {
+      "updateOwner": "ObjectId",
+      "updateDate": "String"
+    }
+  }
+]

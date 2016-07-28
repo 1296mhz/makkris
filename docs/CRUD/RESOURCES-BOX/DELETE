@@ -1,0 +1,4 @@
+#!/bin/bash
+
+echo "Удаляем бокс"
+http DELETE http://localhost:3000/resources/box/578b72e36c02543c702231f0
