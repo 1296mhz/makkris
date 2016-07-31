@@ -19,7 +19,9 @@ exports.findUserAll = function (req, res) {
             "boxId": true,
             "fio": true,
             "description": true,
-            "status": true
+            "status": true,
+            "createDate": true,
+            "updateDate": true
         }).toArray(function (err, items) {
             res.send(items);
         });

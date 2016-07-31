@@ -3,14 +3,21 @@
  */
 var mainFrame = new mainFrame();
 //Администрирование
+
+//Пользователи
 $('.user-control').on('click', function () {
     mainFrame.clearFrame('mainframe');
-    console.log("User control");
+    // mainFrame.addFrame('mainframe','user-table');
+    $('#mainframe').append("<div id='user-table'></div>");
+
+    var user = new User();
+    user.pageableTable('user-table');
+
 });
 
 $('.boxes-control').on('click', function () {
     console.log("boxes control");
-    mainFrame.renameFrame('mainframe','nonmainframe');
+    mainFrame.renameFrame('mainframe', 'nonmainframe');
 });
 
 $('.posts-control').on('click', function () {
@@ -27,6 +34,7 @@ $('.customer-control').on('click', function () {
 
 $('.log-control').on('click', function () {
     console.log("Log control");
+    mainFrame.clearFrame('mainframe');
 });
 
 //Заявки

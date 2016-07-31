@@ -9,6 +9,12 @@ mainFrame.prototype.clearFrame = function (framenameid) {
     console.log(framenameid);
     $('#'+framenameid).empty();
 };
+
+mainFrame.prototype.addFrame = function (framenameid, newframenameid){
+    console.log("Добавить внутрь новый фрейм");
+    $('#'+framenameid).append( "<div id="+newframenameid+">");
+};
+
 //переименовываем выбранный id
 mainFrame.prototype.renameFrame = function (framenameid, newframenameid) {
 
@@ -17,5 +23,6 @@ mainFrame.prototype.renameFrame = function (framenameid, newframenameid) {
 
 mainFrame.prototype.deleteFrame = function (framenameid, newframenameid) {
     console.log(framenameid);
-   
 };
+
+

@@ -29,34 +29,5 @@ UserCollection = Backbone.Collection.extend({
 
 });
 
-//Вьюшка одного
-ViewsUserItem = Backbone.View.extend({
-    tagName: 'li',
-
-    render: function() {
-        this.$el.html( this.model.get('username') );
-        return this;
-    }
-});
-
-//Вьюшка список для коллекции
-var ViewsUsersListItem = Backbone.View.extend({
-    el: '#users-list',
-    tagName: 'li',
-    className: 'user',
-
-    initialize: function() {
-        console.log(this.model);
-    }
-});
-
-
-var userCollection = new UserCollection();
-userCollection.fetch();
-
-// Create Model and View instances:
-var userModel = new UserModel();
-var userView = new ViewsUsersListItem({model: userModel});
-
 
 
