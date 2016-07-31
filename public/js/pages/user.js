@@ -29,13 +29,36 @@ User.prototype.table = function (usertableid, columnsarray) {
 
 User.prototype.pageableTable = function (usertableid) {
 
+    var modalWindow = new bmodal();
+    var ResetPassword = Backgrid.Cell.extend({
+        events: {
+            'click .resetPasswordButton': 'resetPassword'
+        },
+
+        resetPassword: function (e) {
+            console.log('reset password');
+            e.preventDefault();
+            var thisModel = new UserModel({
+                urlRoot: "/user",
+                idAttribute: "_id"
+            });
+            console.log(thisModel);
+            thisModel = this.model;
+            modalWindow.createModalWindow();
+        },
+        render: function () {
+            this.$el.html('<button class="btn btn-default button_centered resetPasswordButton" data-toggle="modal" data-target="#myModal"><span class="glyphicon glyphicon-remove" aria-hidden="true"></span></button>');
+            return this;
+        }
+    });
+
     var ActionCell = Backgrid.Cell.extend({
         events: {
             'click .removeButton': 'deleteRow',
             'click .saveButton': 'saveRow'
         },
         deleteRow: function (e) {
-            console.log('delete')
+            console.log('delete');
             e.preventDefault();
             var thisModel = new UserModel({
                 urlRoot: "/user",
@@ -46,30 +69,26 @@ User.prototype.pageableTable = function (usertableid) {
             thisModel.destroy({
                 success: function (model, response) {
                 }
-            })
+            });
         },
 
         saveRow: function (e) {
             console.log("save");
             e.preventDefault();
-            var thisModel = new UserModel({
-                urlRoot: "/user",
-                idAttribute: "_id"
-            });
-            console.log(thisModel);
-            thisModel = this.model;
+            var thisModel = new UserModel({});
 
-            thisModel.save({
-                success: function (model, response) {
-                }
-            })
+            thisModel = this.model;
+            console.log(thisModel.changedAttributes());
+            thisModel.save(thisModel.changedAttributes(), {patch: true})
         },
         
         render: function () {
-            this.$el.html('<button class="removeButton"><span class="glyphicon glyphicon-remove" aria-hidden="true"></span></button><button class="saveButton"><span class="glyphicon glyphicon-ok" aria-hidden="true"></span></button>');
+            this.$el.html('<div class="button_centered"><button class="btn btn-default button_margin removeButton"><span class="glyphicon glyphicon-remove" aria-hidden="true"></span></button><button class="btn btn-default button_margin saveButton"><span class="glyphicon glyphicon-ok" aria-hidden="true"></span></button></div>');
             return this;
         }
     });
+
+
 
     var columns = [{
 
@@ -77,6 +96,10 @@ User.prototype.pageableTable = function (usertableid) {
         label: "Имя пользователя",
         // The cell type can be a reference of a Backgrid.Cell subclass, any Backgrid.Cell subclass instances like *id* above, or a string
         cell: "string" // This is converted to "StringCell" and a corresponding class in the Backgrid package namespace is looked up
+    }, {
+        name: "",
+        label: "Сбросить пароль",
+        cell: ResetPassword
     }, {
         name: "group",
         label: "Группа",
@@ -142,7 +165,7 @@ User.prototype.pageableTable = function (usertableid) {
 
 // Render the grid
     var $example2 = $("#" + usertableid);
-    $example2.append(pageableGrid.render().el)
+    $example2.append(pageableGrid.render().el);
 
 // Initialize the paginator
     var paginator = new Backgrid.Extension.Paginator({

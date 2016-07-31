@@ -6,3 +6,12 @@ body {
 a {
   color: #00B7FF;
 }
+
+.button_centered {
+  margin:auto;
+  display:block;
+}
+
+.button_margin {
+  margin-left: 2px;
+}

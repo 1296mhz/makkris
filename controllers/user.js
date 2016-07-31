@@ -116,7 +116,7 @@ exports.updateUser = function (req, res) {
 
 exports.updateOnePropertyUser = function ( req, res) {
     var id = req.params.id;
-    log.info(req.body);
+    log.info("От клиента: "+JSON.stringify(req.body));
 
 
     var account = {};

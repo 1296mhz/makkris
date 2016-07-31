@@ -1830,3 +1830,256 @@
 {"level":"info","message":"Current user: 57878b994230774e3167f6e1","timestamp":"2016-07-31T12:19:42.359Z"}
 {"level":"info","message":"Retrieving All event's:","timestamp":"2016-07-31T12:19:42.359Z"}
 {"level":"info","message":"Retrieving all user's","timestamp":"2016-07-31T12:19:44.316Z"}
+{"level":"info","message":"Retrieving All Resource's:","timestamp":"2016-07-31T12:28:04.343Z"}
+{"level":"info","message":"Current user: 57878b994230774e3167f6e1","timestamp":"2016-07-31T12:28:04.353Z"}
+{"level":"info","message":"Retrieving All event's:","timestamp":"2016-07-31T12:28:04.354Z"}
+{"level":"info","message":"Retrieving all user's","timestamp":"2016-07-31T12:28:05.655Z"}
+{"level":"info","message":"Retrieving All Resource's:","timestamp":"2016-07-31T12:29:16.121Z"}
+{"level":"info","message":"Current user: 57878b994230774e3167f6e1","timestamp":"2016-07-31T12:29:16.128Z"}
+{"level":"info","message":"Retrieving All event's:","timestamp":"2016-07-31T12:29:16.129Z"}
+{"level":"info","message":"Retrieving all user's","timestamp":"2016-07-31T12:29:17.538Z"}
+{"level":"info","message":"Retrieving All Resource's:","timestamp":"2016-07-31T12:30:03.881Z"}
+{"level":"info","message":"Current user: 57878b994230774e3167f6e1","timestamp":"2016-07-31T12:30:03.885Z"}
+{"level":"info","message":"Retrieving All event's:","timestamp":"2016-07-31T12:30:03.885Z"}
+{"level":"info","message":"Retrieving all user's","timestamp":"2016-07-31T12:30:06.167Z"}
+{"level":"info","message":"Updating user: 5788786c9023171f18b9a486","timestamp":"2016-07-31T12:31:05.382Z"}
+{"level":"info","message":"{\"_id\":\"5788786c9023171f18b9a486\",\"boxId\":\"ff\",\"createDate\":\"2016-07-15T05:45:16\",\"description\":\"Хрен  что\",\"fio\":\"Зы\",\"group\":\"administrators\",\"status\":\"on\",\"updateDate\":\"2016-07-31T17:12:29\",\"username\":\"Diamrik\",\"password\":\"123\",\"createOwner\":null,\"updateOwner\":null}","timestamp":"2016-07-31T12:31:05.382Z"}
+{"level":"info","message":"Retrieving All Resource's:","timestamp":"2016-07-31T12:31:57.684Z"}
+{"level":"info","message":"Current user: 57878b994230774e3167f6e1","timestamp":"2016-07-31T12:31:57.693Z"}
+{"level":"info","message":"Retrieving All event's:","timestamp":"2016-07-31T12:31:57.693Z"}
+{"level":"info","message":"Retrieving all user's","timestamp":"2016-07-31T12:31:59.398Z"}
+{"level":"info","message":"","timestamp":"2016-07-31T12:32:02.955Z"}
+{"level":"info","message":"Пользователь: {\"updateDate\":\"2016-07-31T17:32:02\"}","timestamp":"2016-07-31T12:32:02.955Z"}
+{"level":"info","message":"Retrieving All Resource's:","timestamp":"2016-07-31T12:32:39.928Z"}
+{"level":"info","message":"Current user: 57878b994230774e3167f6e1","timestamp":"2016-07-31T12:32:39.932Z"}
+{"level":"info","message":"Retrieving All event's:","timestamp":"2016-07-31T12:32:39.932Z"}
+{"level":"info","message":"Retrieving all user's","timestamp":"2016-07-31T12:32:41.666Z"}
+{"level":"info","message":"","timestamp":"2016-07-31T12:32:52.657Z"}
+{"level":"info","message":"Пользователь: {\"updateDate\":\"2016-07-31T17:32:52\"}","timestamp":"2016-07-31T12:32:52.657Z"}
+{"level":"info","message":"Retrieving all user's","timestamp":"2016-07-31T12:33:03.751Z"}
+{"level":"info","message":"","timestamp":"2016-07-31T12:33:10.812Z"}
+{"level":"info","message":"Пользователь: {\"updateDate\":\"2016-07-31T17:33:10\"}","timestamp":"2016-07-31T12:33:10.812Z"}
+{"level":"info","message":"Retrieving All Resource's:","timestamp":"2016-07-31T12:33:19.478Z"}
+{"level":"info","message":"Current user: 57878b994230774e3167f6e1","timestamp":"2016-07-31T12:33:19.482Z"}
+{"level":"info","message":"Retrieving All event's:","timestamp":"2016-07-31T12:33:19.482Z"}
+{"level":"info","message":"Retrieving all user's","timestamp":"2016-07-31T12:33:20.507Z"}
+{"level":"info","message":"","timestamp":"2016-07-31T12:33:46.509Z"}
+{"level":"info","message":"Пользователь: {\"updateDate\":\"2016-07-31T17:33:46\"}","timestamp":"2016-07-31T12:33:46.509Z"}
+{"level":"info","message":"Retrieving All Resource's:","timestamp":"2016-07-31T12:34:19.269Z"}
+{"level":"info","message":"Current user: 57878b994230774e3167f6e1","timestamp":"2016-07-31T12:34:19.275Z"}
+{"level":"info","message":"Retrieving All event's:","timestamp":"2016-07-31T12:34:19.275Z"}
+{"level":"info","message":"Retrieving all user's","timestamp":"2016-07-31T12:34:21.007Z"}
+{"level":"info","message":"","timestamp":"2016-07-31T12:34:24.837Z"}
+{"level":"info","message":"Пользователь: {\"updateDate\":\"2016-07-31T17:34:24\"}","timestamp":"2016-07-31T12:34:24.838Z"}
+{"level":"info","message":"Retrieving All Resource's:","timestamp":"2016-07-31T12:35:45.004Z"}
+{"level":"info","message":"Current user: 57878b994230774e3167f6e1","timestamp":"2016-07-31T12:35:45.011Z"}
+{"level":"info","message":"Retrieving All event's:","timestamp":"2016-07-31T12:35:45.011Z"}
+{"level":"info","message":"Retrieving all user's","timestamp":"2016-07-31T12:35:46.171Z"}
+{"level":"info","message":"ОТ клиента: [object Object]","timestamp":"2016-07-31T12:35:51.449Z"}
+{"level":"info","message":"Пользователь: {\"updateDate\":\"2016-07-31T17:35:51\"}","timestamp":"2016-07-31T12:35:51.453Z"}
+{"level":"info","message":"Retrieving All Resource's:","timestamp":"2016-07-31T12:36:17.384Z"}
+{"level":"info","message":"Current user: 57878b994230774e3167f6e1","timestamp":"2016-07-31T12:36:17.393Z"}
+{"level":"info","message":"Retrieving All event's:","timestamp":"2016-07-31T12:36:17.393Z"}
+{"level":"info","message":"Retrieving all user's","timestamp":"2016-07-31T12:36:18.693Z"}
+{"level":"info","message":"От клиента: {}","timestamp":"2016-07-31T12:36:23.648Z"}
+{"level":"info","message":"Пользователь: {\"updateDate\":\"2016-07-31T17:36:23\"}","timestamp":"2016-07-31T12:36:23.651Z"}
+{"level":"info","message":"Retrieving All Resource's:","timestamp":"2016-07-31T12:38:17.135Z"}
+{"level":"info","message":"Current user: 57878b994230774e3167f6e1","timestamp":"2016-07-31T12:38:17.143Z"}
+{"level":"info","message":"Retrieving All event's:","timestamp":"2016-07-31T12:38:17.143Z"}
+{"level":"info","message":"Retrieving all user's","timestamp":"2016-07-31T12:38:18.147Z"}
+{"level":"info","message":"От клиента: {}","timestamp":"2016-07-31T12:38:22.995Z"}
+{"level":"info","message":"Пользователь: {\"updateDate\":\"2016-07-31T17:38:22\"}","timestamp":"2016-07-31T12:38:22.996Z"}
+{"level":"info","message":"Retrieving All Resource's:","timestamp":"2016-07-31T12:39:09.043Z"}
+{"level":"info","message":"Current user: 57878b994230774e3167f6e1","timestamp":"2016-07-31T12:39:09.045Z"}
+{"level":"info","message":"Retrieving All event's:","timestamp":"2016-07-31T12:39:09.046Z"}
+{"level":"info","message":"Retrieving all user's","timestamp":"2016-07-31T12:39:10.485Z"}
+{"level":"info","message":"Updating user: 5788786c9023171f18b9a486","timestamp":"2016-07-31T12:39:15.854Z"}
+{"level":"info","message":"{\"_id\":\"5788786c9023171f18b9a486\",\"boxId\":\"ff\",\"createDate\":\"2016-07-15T05:45:16\",\"description\":\"Хрен \",\"fio\":\"Зы\",\"group\":\"administrators\",\"status\":\"on\",\"updateDate\":\"2016-07-31T17:38:22\",\"username\":\"Diamrik\",\"password\":\"123\",\"createOwner\":null,\"updateOwner\":null}","timestamp":"2016-07-31T12:39:15.854Z"}
+{"level":"info","message":"Retrieving all user's","timestamp":"2016-07-31T12:39:37.996Z"}
+{"level":"info","message":"Retrieving All Resource's:","timestamp":"2016-07-31T12:40:55.797Z"}
+{"level":"info","message":"Current user: 57878b994230774e3167f6e1","timestamp":"2016-07-31T12:40:55.802Z"}
+{"level":"info","message":"Retrieving All event's:","timestamp":"2016-07-31T12:40:55.803Z"}
+{"level":"info","message":"Retrieving all user's","timestamp":"2016-07-31T12:40:56.961Z"}
+{"level":"info","message":"От клиента: {}","timestamp":"2016-07-31T12:41:01.465Z"}
+{"level":"info","message":"Пользователь: {\"updateDate\":\"2016-07-31T17:41:01\"}","timestamp":"2016-07-31T12:41:01.465Z"}
+{"level":"info","message":"Retrieving All Resource's:","timestamp":"2016-07-31T12:54:48.291Z"}
+{"level":"info","message":"Current user: 57878b994230774e3167f6e1","timestamp":"2016-07-31T12:54:48.295Z"}
+{"level":"info","message":"Retrieving All event's:","timestamp":"2016-07-31T12:54:48.295Z"}
+{"level":"info","message":"Retrieving all user's","timestamp":"2016-07-31T12:54:49.432Z"}
+{"level":"info","message":"От клиента: {}","timestamp":"2016-07-31T12:54:54.772Z"}
+{"level":"info","message":"Пользователь: {\"updateDate\":\"2016-07-31T17:54:54\"}","timestamp":"2016-07-31T12:54:54.773Z"}
+{"level":"info","message":"Retrieving All Resource's:","timestamp":"2016-07-31T12:55:18.627Z"}
+{"level":"info","message":"Current user: 57878b994230774e3167f6e1","timestamp":"2016-07-31T12:55:18.630Z"}
+{"level":"info","message":"Retrieving All event's:","timestamp":"2016-07-31T12:55:18.631Z"}
+{"level":"info","message":"Retrieving all user's","timestamp":"2016-07-31T12:55:20.060Z"}
+{"level":"info","message":"От клиента: {}","timestamp":"2016-07-31T12:55:25.302Z"}
+{"level":"info","message":"Пользователь: {\"updateDate\":\"2016-07-31T17:55:25\"}","timestamp":"2016-07-31T12:55:25.303Z"}
+{"level":"info","message":"Retrieving All Resource's:","timestamp":"2016-07-31T12:58:28.822Z"}
+{"level":"info","message":"Current user: 57878b994230774e3167f6e1","timestamp":"2016-07-31T12:58:28.828Z"}
+{"level":"info","message":"Retrieving All event's:","timestamp":"2016-07-31T12:58:28.828Z"}
+{"level":"info","message":"Retrieving all user's","timestamp":"2016-07-31T12:58:30.369Z"}
+{"level":"info","message":"От клиента: {}","timestamp":"2016-07-31T12:58:36.438Z"}
+{"level":"info","message":"Пользователь: {\"updateDate\":\"2016-07-31T17:58:36\"}","timestamp":"2016-07-31T12:58:36.439Z"}
+{"level":"info","message":"Retrieving All Resource's:","timestamp":"2016-07-31T12:59:47.770Z"}
+{"level":"info","message":"Current user: 57878b994230774e3167f6e1","timestamp":"2016-07-31T12:59:47.778Z"}
+{"level":"info","message":"Retrieving All event's:","timestamp":"2016-07-31T12:59:47.778Z"}
+{"level":"info","message":"Retrieving all user's","timestamp":"2016-07-31T12:59:48.989Z"}
+{"level":"info","message":"От клиента: {}","timestamp":"2016-07-31T12:59:53.278Z"}
+{"level":"info","message":"Пользователь: {\"updateDate\":\"2016-07-31T17:59:53\"}","timestamp":"2016-07-31T12:59:53.279Z"}
+{"level":"info","message":"Retrieving All Resource's:","timestamp":"2016-07-31T13:03:01.355Z"}
+{"level":"info","message":"Current user: 57878b994230774e3167f6e1","timestamp":"2016-07-31T13:03:01.357Z"}
+{"level":"info","message":"Retrieving All event's:","timestamp":"2016-07-31T13:03:01.357Z"}
+{"level":"info","message":"Retrieving all user's","timestamp":"2016-07-31T13:03:02.821Z"}
+{"level":"info","message":"От клиента: {}","timestamp":"2016-07-31T13:03:06.699Z"}
+{"level":"info","message":"Пользователь: {\"updateDate\":\"2016-07-31T18:03:06\"}","timestamp":"2016-07-31T13:03:06.699Z"}
+{"level":"info","message":"Retrieving All Resource's:","timestamp":"2016-07-31T13:03:32.842Z"}
+{"level":"info","message":"Current user: 57878b994230774e3167f6e1","timestamp":"2016-07-31T13:03:32.845Z"}
+{"level":"info","message":"Retrieving All event's:","timestamp":"2016-07-31T13:03:32.845Z"}
+{"level":"info","message":"Retrieving all user's","timestamp":"2016-07-31T13:03:34.202Z"}
+{"level":"info","message":"Updating user: 5788786c9023171f18b9a486","timestamp":"2016-07-31T13:03:37.899Z"}
+{"level":"info","message":"{\"_id\":\"5788786c9023171f18b9a486\",\"boxId\":\"ff\",\"createDate\":\"2016-07-15T05:45:16\",\"description\":\"Хрен123\",\"fio\":\"Зы\",\"group\":\"administrators\",\"status\":\"on\",\"updateDate\":\"2016-07-31T18:03:06\",\"username\":\"Diamrik\",\"password\":\"123\",\"createOwner\":null,\"updateOwner\":null}","timestamp":"2016-07-31T13:03:37.899Z"}
+{"level":"info","message":"Retrieving All Resource's:","timestamp":"2016-07-31T13:03:43.547Z"}
+{"level":"info","message":"Current user: 57878b994230774e3167f6e1","timestamp":"2016-07-31T13:03:43.549Z"}
+{"level":"info","message":"Retrieving All event's:","timestamp":"2016-07-31T13:03:43.549Z"}
+{"level":"info","message":"Retrieving all user's","timestamp":"2016-07-31T13:03:44.955Z"}
+{"level":"info","message":"Updating user: 5788786c9023171f18b9a486","timestamp":"2016-07-31T13:04:11.546Z"}
+{"level":"info","message":"{\"_id\":\"5788786c9023171f18b9a486\",\"boxId\":\"ff\",\"createDate\":\"2016-07-15T05:45:16\",\"description\":\"Х\",\"fio\":\"Зы\",\"group\":\"administrators\",\"status\":\"on\",\"updateDate\":\"2016-07-31T18:03:38\",\"username\":\"Diamrik\",\"password\":\"123\",\"createOwner\":null,\"updateOwner\":null}","timestamp":"2016-07-31T13:04:11.546Z"}
+{"level":"info","message":"Retrieving All Resource's:","timestamp":"2016-07-31T13:06:17.822Z"}
+{"level":"info","message":"Current user: 57878b994230774e3167f6e1","timestamp":"2016-07-31T13:06:17.826Z"}
+{"level":"info","message":"Retrieving All event's:","timestamp":"2016-07-31T13:06:17.826Z"}
+{"level":"info","message":"Retrieving all user's","timestamp":"2016-07-31T13:06:19.065Z"}
+{"level":"info","message":"От клиента: {\"description\":\"Х123\"}","timestamp":"2016-07-31T13:06:24.390Z"}
+{"level":"info","message":"Пользователь: {\"description\":\"Х123\",\"updateDate\":\"2016-07-31T18:06:24\"}","timestamp":"2016-07-31T13:06:24.391Z"}
+{"level":"info","message":"Retrieving All Resource's:","timestamp":"2016-07-31T13:06:30.569Z"}
+{"level":"info","message":"Current user: 57878b994230774e3167f6e1","timestamp":"2016-07-31T13:06:30.572Z"}
+{"level":"info","message":"Retrieving All event's:","timestamp":"2016-07-31T13:06:30.573Z"}
+{"level":"info","message":"Retrieving all user's","timestamp":"2016-07-31T13:06:32.136Z"}
+{"level":"info","message":"Retrieving All Resource's:","timestamp":"2016-07-31T14:13:59.628Z"}
+{"level":"info","message":"Current user: 57878b994230774e3167f6e1","timestamp":"2016-07-31T14:13:59.632Z"}
+{"level":"info","message":"Retrieving All event's:","timestamp":"2016-07-31T14:13:59.632Z"}
+{"level":"info","message":"Retrieving all user's","timestamp":"2016-07-31T14:14:01.409Z"}
+{"level":"info","message":"Retrieving All Resource's:","timestamp":"2016-07-31T14:30:06.941Z"}
+{"level":"info","message":"Current user: 57878b994230774e3167f6e1","timestamp":"2016-07-31T14:30:06.947Z"}
+{"level":"info","message":"Retrieving All event's:","timestamp":"2016-07-31T14:30:06.947Z"}
+{"level":"info","message":"Retrieving All Resource's:","timestamp":"2016-07-31T14:31:47.707Z"}
+{"level":"info","message":"Current user: 57878b994230774e3167f6e1","timestamp":"2016-07-31T14:31:47.711Z"}
+{"level":"info","message":"Retrieving All event's:","timestamp":"2016-07-31T14:31:47.712Z"}
+{"level":"info","message":"Retrieving all user's","timestamp":"2016-07-31T14:31:48.949Z"}
+{"level":"info","message":"Retrieving All Resource's:","timestamp":"2016-07-31T14:36:49.149Z"}
+{"level":"info","message":"Current user: 57878b994230774e3167f6e1","timestamp":"2016-07-31T14:36:49.156Z"}
+{"level":"info","message":"Retrieving All event's:","timestamp":"2016-07-31T14:36:49.156Z"}
+{"level":"info","message":"Retrieving all user's","timestamp":"2016-07-31T14:36:51.276Z"}
+{"level":"info","message":"Retrieving All Resource's:","timestamp":"2016-07-31T14:37:18.862Z"}
+{"level":"info","message":"Current user: 57878b994230774e3167f6e1","timestamp":"2016-07-31T14:37:18.867Z"}
+{"level":"info","message":"Retrieving All event's:","timestamp":"2016-07-31T14:37:18.868Z"}
+{"level":"info","message":"Retrieving all user's","timestamp":"2016-07-31T14:37:20.380Z"}
+{"level":"info","message":"Retrieving All Resource's:","timestamp":"2016-07-31T14:39:30.195Z"}
+{"level":"info","message":"Current user: 57878b994230774e3167f6e1","timestamp":"2016-07-31T14:39:30.200Z"}
+{"level":"info","message":"Retrieving All event's:","timestamp":"2016-07-31T14:39:30.200Z"}
+{"level":"info","message":"Retrieving All Resource's:","timestamp":"2016-07-31T14:39:54.214Z"}
+{"level":"info","message":"Current user: 57878b994230774e3167f6e1","timestamp":"2016-07-31T14:39:54.218Z"}
+{"level":"info","message":"Retrieving All event's:","timestamp":"2016-07-31T14:39:54.218Z"}
+{"level":"info","message":"Current user: 57878b994230774e3167f6e1","timestamp":"2016-07-31T14:40:11.411Z"}
+{"level":"info","message":"Retrieving All event's:","timestamp":"2016-07-31T14:40:11.411Z"}
+{"level":"info","message":"Retrieving all user's","timestamp":"2016-07-31T14:40:18.014Z"}
+{"level":"info","message":"Retrieving All Resource's:","timestamp":"2016-07-31T14:42:19.637Z"}
+{"level":"info","message":"Current user: 57878b994230774e3167f6e1","timestamp":"2016-07-31T14:42:19.644Z"}
+{"level":"info","message":"Retrieving All event's:","timestamp":"2016-07-31T14:42:19.644Z"}
+{"level":"info","message":"Retrieving all user's","timestamp":"2016-07-31T14:42:20.980Z"}
+{"level":"info","message":"Retrieving All Resource's:","timestamp":"2016-07-31T14:42:37.437Z"}
+{"level":"info","message":"Current user: 57878b994230774e3167f6e1","timestamp":"2016-07-31T14:42:37.438Z"}
+{"level":"info","message":"Retrieving All event's:","timestamp":"2016-07-31T14:42:37.438Z"}
+{"level":"info","message":"Retrieving all user's","timestamp":"2016-07-31T14:42:39.319Z"}
+{"level":"info","message":"Retrieving All Resource's:","timestamp":"2016-07-31T14:44:44.593Z"}
+{"level":"info","message":"Current user: 57878b994230774e3167f6e1","timestamp":"2016-07-31T14:44:44.599Z"}
+{"level":"info","message":"Retrieving All event's:","timestamp":"2016-07-31T14:44:44.599Z"}
+{"level":"info","message":"Retrieving all user's","timestamp":"2016-07-31T14:44:46.117Z"}
+{"level":"info","message":"Retrieving All Resource's:","timestamp":"2016-07-31T14:45:28.784Z"}
+{"level":"info","message":"Current user: 57878b994230774e3167f6e1","timestamp":"2016-07-31T14:45:28.787Z"}
+{"level":"info","message":"Retrieving All event's:","timestamp":"2016-07-31T14:45:28.788Z"}
+{"level":"info","message":"Retrieving all user's","timestamp":"2016-07-31T14:45:30.330Z"}
+{"level":"info","message":"Retrieving All Resource's:","timestamp":"2016-07-31T14:46:19.535Z"}
+{"level":"info","message":"Current user: 57878b994230774e3167f6e1","timestamp":"2016-07-31T14:46:19.538Z"}
+{"level":"info","message":"Retrieving All event's:","timestamp":"2016-07-31T14:46:19.538Z"}
+{"level":"info","message":"Retrieving all user's","timestamp":"2016-07-31T14:46:21.039Z"}
+{"level":"info","message":"Retrieving All Resource's:","timestamp":"2016-07-31T14:46:35.368Z"}
+{"level":"info","message":"Current user: 57878b994230774e3167f6e1","timestamp":"2016-07-31T14:46:35.371Z"}
+{"level":"info","message":"Retrieving All event's:","timestamp":"2016-07-31T14:46:35.371Z"}
+{"level":"info","message":"Retrieving all user's","timestamp":"2016-07-31T14:46:37.248Z"}
+{"level":"info","message":"Retrieving All Resource's:","timestamp":"2016-07-31T14:48:01.796Z"}
+{"level":"info","message":"Current user: 57878b994230774e3167f6e1","timestamp":"2016-07-31T14:48:01.799Z"}
+{"level":"info","message":"Retrieving All event's:","timestamp":"2016-07-31T14:48:01.799Z"}
+{"level":"info","message":"Retrieving all user's","timestamp":"2016-07-31T14:48:03.113Z"}
+{"level":"info","message":"Retrieving All Resource's:","timestamp":"2016-07-31T14:50:37.390Z"}
+{"level":"info","message":"Current user: 57878b994230774e3167f6e1","timestamp":"2016-07-31T14:50:37.394Z"}
+{"level":"info","message":"Retrieving All event's:","timestamp":"2016-07-31T14:50:37.394Z"}
+{"level":"info","message":"Retrieving all user's","timestamp":"2016-07-31T14:50:39.033Z"}
+{"level":"info","message":"Retrieving All Resource's:","timestamp":"2016-07-31T15:03:49.551Z"}
+{"level":"info","message":"Current user: 57878b994230774e3167f6e1","timestamp":"2016-07-31T15:03:49.563Z"}
+{"level":"info","message":"Retrieving All event's:","timestamp":"2016-07-31T15:03:49.563Z"}
+{"level":"info","message":"Retrieving all user's","timestamp":"2016-07-31T15:03:53.486Z"}
+{"level":"info","message":"От клиента: {\"description\":\"Димарик епта\"}","timestamp":"2016-07-31T15:05:46.039Z"}
+{"level":"info","message":"Пользователь: {\"description\":\"Димарик епта\",\"updateDate\":\"2016-07-31T20:05:46\"}","timestamp":"2016-07-31T15:05:46.043Z"}
+{"level":"info","message":"Retrieving all user's","timestamp":"2016-07-31T15:05:54.335Z"}
+{"level":"info","message":"Retrieving All Resource's:","timestamp":"2016-07-31T15:11:41.699Z"}
+{"level":"info","message":"Current user: 57878b994230774e3167f6e1","timestamp":"2016-07-31T15:11:41.707Z"}
+{"level":"info","message":"Retrieving All event's:","timestamp":"2016-07-31T15:11:41.707Z"}
+{"level":"info","message":"Retrieving all user's","timestamp":"2016-07-31T15:11:43.499Z"}
+{"level":"info","message":"Retrieving All Resource's:","timestamp":"2016-07-31T15:17:18.220Z"}
+{"level":"info","message":"Current user: 57878b994230774e3167f6e1","timestamp":"2016-07-31T15:17:18.223Z"}
+{"level":"info","message":"Retrieving All event's:","timestamp":"2016-07-31T15:17:18.223Z"}
+{"level":"info","message":"Retrieving all user's","timestamp":"2016-07-31T15:17:19.800Z"}
+{"level":"info","message":"Updating user: 5788786c9023171f18b9a486","timestamp":"2016-07-31T15:17:39.265Z"}
+{"level":"info","message":"{\"_id\":\"5788786c9023171f18b9a486\",\"boxId\":\"ff\",\"createDate\":\"2016-07-15T05:45:16\",\"description\":\"Димарик епта\",\"fio\":\"Зы\",\"group\":\"administrators\",\"status\":\"on\",\"updateDate\":\"2016-07-31T20:05:46\",\"username\":\"Diamrik\",\"password\":\"123\",\"createOwner\":null,\"updateOwner\":null,\"false\":{\"patch\":true}}","timestamp":"2016-07-31T15:17:39.265Z"}
+{"level":"info","message":"От клиента: {\"description\":\"Димарик hekbn\"}","timestamp":"2016-07-31T15:17:45.740Z"}
+{"level":"info","message":"Пользователь: {\"description\":\"Димарик hekbn\",\"updateDate\":\"2016-07-31T20:17:45\"}","timestamp":"2016-07-31T15:17:45.740Z"}
+{"level":"info","message":"От клиента: {\"description\":\"Димари\"}","timestamp":"2016-07-31T15:17:54.979Z"}
+{"level":"info","message":"Пользователь: {\"description\":\"Димари\",\"updateDate\":\"2016-07-31T20:17:54\"}","timestamp":"2016-07-31T15:17:54.980Z"}
+{"level":"info","message":"Retrieving All Resource's:","timestamp":"2016-07-31T15:19:47.197Z"}
+{"level":"info","message":"Current user: 57878b994230774e3167f6e1","timestamp":"2016-07-31T15:19:47.203Z"}
+{"level":"info","message":"Retrieving All event's:","timestamp":"2016-07-31T15:19:47.204Z"}
+{"level":"info","message":"Retrieving All Resource's:","timestamp":"2016-07-31T15:20:17.954Z"}
+{"level":"info","message":"Current user: 57878b994230774e3167f6e1","timestamp":"2016-07-31T15:20:17.958Z"}
+{"level":"info","message":"Retrieving All event's:","timestamp":"2016-07-31T15:20:17.959Z"}
+{"level":"info","message":"Retrieving all user's","timestamp":"2016-07-31T15:20:18.969Z"}
+{"level":"info","message":"От клиента: {\"fio\":\"Димочка\"}","timestamp":"2016-07-31T15:20:36.051Z"}
+{"level":"info","message":"Пользователь: {\"fio\":\"Димочка\",\"updateDate\":\"2016-07-31T20:20:36\"}","timestamp":"2016-07-31T15:20:36.051Z"}
+{"level":"info","message":"Retrieving All Resource's:","timestamp":"2016-07-31T18:00:01.010Z"}
+{"level":"info","message":"Current user: 57878b994230774e3167f6e1","timestamp":"2016-07-31T18:00:01.016Z"}
+{"level":"info","message":"Retrieving All event's:","timestamp":"2016-07-31T18:00:01.016Z"}
+{"level":"info","message":"Retrieving all user's","timestamp":"2016-07-31T18:00:02.860Z"}
+{"level":"info","message":"От клиента: {\"description\":\"Димарик\"}","timestamp":"2016-07-31T18:07:44.369Z"}
+{"level":"info","message":"Пользователь: {\"description\":\"Димарик\",\"updateDate\":\"2016-07-31T23:07:44\"}","timestamp":"2016-07-31T18:07:44.370Z"}
+{"level":"info","message":"От клиента: {\"description\":\"Администратор\"}","timestamp":"2016-07-31T18:09:49.876Z"}
+{"level":"info","message":"Пользователь: {\"description\":\"Администратор\",\"updateDate\":\"2016-07-31T23:09:49\"}","timestamp":"2016-07-31T18:09:49.877Z"}
+{"level":"info","message":"Retrieving All Resource's:","timestamp":"2016-07-31T18:40:11.540Z"}
+{"level":"info","message":"Current user: 57878b994230774e3167f6e1","timestamp":"2016-07-31T18:40:11.544Z"}
+{"level":"info","message":"Retrieving All event's:","timestamp":"2016-07-31T18:40:11.544Z"}
+{"level":"info","message":"Retrieving All Resource's:","timestamp":"2016-07-31T18:41:07.370Z"}
+{"level":"info","message":"Current user: 57878b994230774e3167f6e1","timestamp":"2016-07-31T18:41:07.373Z"}
+{"level":"info","message":"Retrieving All event's:","timestamp":"2016-07-31T18:41:07.373Z"}
+{"level":"info","message":"Retrieving all user's","timestamp":"2016-07-31T18:41:09.907Z"}
+{"level":"info","message":"Retrieving All Resource's:","timestamp":"2016-07-31T18:41:30.306Z"}
+{"level":"info","message":"Current user: 57878b994230774e3167f6e1","timestamp":"2016-07-31T18:41:30.310Z"}
+{"level":"info","message":"Retrieving All event's:","timestamp":"2016-07-31T18:41:30.310Z"}
+{"level":"info","message":"Retrieving all user's","timestamp":"2016-07-31T18:41:32.053Z"}
+{"level":"info","message":"Retrieving All Resource's:","timestamp":"2016-07-31T18:43:18.958Z"}
+{"level":"info","message":"Current user: 57878b994230774e3167f6e1","timestamp":"2016-07-31T18:43:18.965Z"}
+{"level":"info","message":"Retrieving All event's:","timestamp":"2016-07-31T18:43:18.965Z"}
+{"level":"info","message":"Retrieving all user's","timestamp":"2016-07-31T18:43:20.580Z"}
+{"level":"info","message":"Retrieving All Resource's:","timestamp":"2016-07-31T18:44:23.753Z"}
+{"level":"info","message":"Current user: 57878b994230774e3167f6e1","timestamp":"2016-07-31T18:44:23.756Z"}
+{"level":"info","message":"Retrieving All event's:","timestamp":"2016-07-31T18:44:23.756Z"}
+{"level":"info","message":"Retrieving all user's","timestamp":"2016-07-31T18:44:24.886Z"}
+{"level":"info","message":"Retrieving All Resource's:","timestamp":"2016-07-31T18:45:26.375Z"}
+{"level":"info","message":"Current user: 57878b994230774e3167f6e1","timestamp":"2016-07-31T18:45:26.378Z"}
+{"level":"info","message":"Retrieving All event's:","timestamp":"2016-07-31T18:45:26.378Z"}
+{"level":"info","message":"Retrieving all user's","timestamp":"2016-07-31T18:45:28.234Z"}
+{"level":"info","message":"Retrieving All Resource's:","timestamp":"2016-07-31T18:51:14.393Z"}
+{"level":"info","message":"Current user: 57878b994230774e3167f6e1","timestamp":"2016-07-31T18:51:14.396Z"}
+{"level":"info","message":"Retrieving All event's:","timestamp":"2016-07-31T18:51:14.396Z"}
+{"level":"info","message":"Retrieving all user's","timestamp":"2016-07-31T18:51:15.836Z"}
+{"level":"info","message":"Retrieving All Resource's:","timestamp":"2016-07-31T18:52:10.705Z"}
+{"level":"info","message":"Current user: 57878b994230774e3167f6e1","timestamp":"2016-07-31T18:52:10.709Z"}
+{"level":"info","message":"Retrieving All event's:","timestamp":"2016-07-31T18:52:10.709Z"}
+{"level":"info","message":"Retrieving all user's","timestamp":"2016-07-31T18:52:12.165Z"}
