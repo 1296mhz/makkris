@@ -29,13 +29,13 @@ User.prototype.table = function (usertableid, columnsarray) {
 
 User.prototype.pageableTable = function (usertableid) {
 
-    var modalWindow = new bmodal();
     var ResetPassword = Backgrid.Cell.extend({
         events: {
             'click .resetPasswordButton': 'resetPassword'
         },
 
         resetPassword: function (e) {
+            $('.mw').empty();
             console.log('reset password');
             e.preventDefault();
             var thisModel = new UserModel({
@@ -44,7 +44,60 @@ User.prototype.pageableTable = function (usertableid) {
             });
             console.log(thisModel);
             thisModel = this.model;
+            var modalWindow = new bmodal();
+
             modalWindow.createModalWindow();
+            var UserModalForm = Backbone.Model.extend({
+                schema: {
+
+                    password: {
+                        type: 'Password',
+                        validators: ['required']
+                    },
+                    confirmPassword: {
+                        type: 'Password',
+                        validators: [
+                            'required',
+                            {type: 'match', field: 'password', message: 'Пароли не совпадают!'}
+                        ]
+                    }
+                }
+            });
+
+            var userModalForm = new UserModalForm();
+
+            var form = new Backbone.Form({
+                model: userModalForm
+            }).render();
+
+
+            $('.modal-body').append(form.el);
+            $('.closeUserWindowModal').click(function () {
+
+                $('.mw').empty();
+            });
+
+            $('.saveUserWindowModal').click(function () {
+
+                var errors = form.commit(); // runs schema validation
+                if (errors) {
+                    console.log(errors);
+
+                    var options = {};
+                    // Run the effect
+                    $("#myModal").effect( "shake" );
+
+
+                } else {
+                    var data = form.getValue();
+                    console.log(data)
+                    $('.mw').empty();
+                }
+
+
+            });
+
+
         },
         render: function () {
             this.$el.html('<button class="btn btn-default button_centered resetPasswordButton" data-toggle="modal" data-target="#myModal"><span class="glyphicon glyphicon-remove" aria-hidden="true"></span></button>');
@@ -81,13 +134,12 @@ User.prototype.pageableTable = function (usertableid) {
             console.log(thisModel.changedAttributes());
             thisModel.save(thisModel.changedAttributes(), {patch: true})
         },
-        
+
         render: function () {
             this.$el.html('<div class="button_centered"><button class="btn btn-default button_margin removeButton"><span class="glyphicon glyphicon-remove" aria-hidden="true"></span></button><button class="btn btn-default button_margin saveButton"><span class="glyphicon glyphicon-ok" aria-hidden="true"></span></button></div>');
             return this;
         }
     });
-
 
 
     var columns = [{
