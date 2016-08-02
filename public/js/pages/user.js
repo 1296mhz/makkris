@@ -132,8 +132,11 @@ User.prototype.pageableTable = function (usertableid) {
             var thisModel = new UserModel({});
 
             thisModel = this.model;
-            console.log(thisModel.changedAttributes());
-            thisModel.save(thisModel.changedAttributes(), {patch: true})
+            console.log("Изменили: "+thisModel.changedAttributes());
+            if(thisModel.changedAttributes()){
+                thisModel.save(thisModel.changedAttributes(), {patch: true})
+            }
+
         },
 
         render: function () {

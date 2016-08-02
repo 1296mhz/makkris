@@ -2723,3 +2723,67 @@
 {"level":"info","message":"Retrieving all user's","timestamp":"2016-08-01T22:38:04.478Z"}
 {"level":"info","message":"Retrieving all user's","timestamp":"2016-08-01T22:38:07.190Z"}
 {"level":"info","message":"Retrieving all user's","timestamp":"2016-08-01T22:38:10.103Z"}
+{"level":"info","message":"Retrieving All Resource's:","timestamp":"2016-08-02T04:06:19.933Z"}
+{"level":"info","message":"Current user: 57878b994230774e3167f6e1","timestamp":"2016-08-02T04:06:19.941Z"}
+{"level":"info","message":"Retrieving All event's:","timestamp":"2016-08-02T04:06:19.941Z"}
+{"level":"info","message":"Retrieving all user's","timestamp":"2016-08-02T04:06:23.050Z"}
+{"level":"info","message":"От клиента: {\"password\":\"1234567890\",\"confirmPassword\":\"1234567890\"}","timestamp":"2016-08-02T04:06:40.699Z"}
+{"level":"info","message":"От клиента: {\"status\":true}","timestamp":"2016-08-02T04:06:43.874Z"}
+{"level":"info","message":"Пользователь: {\"status\":true,\"updateDate\":\"2016-08-02T09:06:43\"}","timestamp":"2016-08-02T04:06:43.876Z"}
+{"level":"info","message":"Retrieving All Resource's:","timestamp":"2016-08-02T04:35:22.228Z"}
+{"level":"info","message":"Current user: 57878b994230774e3167f6e1","timestamp":"2016-08-02T04:35:22.231Z"}
+{"level":"info","message":"Retrieving All event's:","timestamp":"2016-08-02T04:35:22.231Z"}
+{"level":"info","message":"Retrieving all user's","timestamp":"2016-08-02T04:35:40.140Z"}
+{"level":"info","message":"От клиента: {\"status\":false}","timestamp":"2016-08-02T04:35:42.571Z"}
+{"level":"info","message":"Пользователь: {\"status\":false,\"updateDate\":\"2016-08-02T09:35:42\"}","timestamp":"2016-08-02T04:35:42.571Z"}
+{"level":"info","message":"От клиента: {\"status\":true}","timestamp":"2016-08-02T04:35:44.285Z"}
+{"level":"info","message":"Пользователь: {\"status\":true,\"updateDate\":\"2016-08-02T09:35:44\"}","timestamp":"2016-08-02T04:35:44.287Z"}
+{"level":"info","message":"От клиента: {\"status\":false}","timestamp":"2016-08-02T04:53:13.953Z"}
+{"level":"info","message":"Пользователь: {\"status\":false,\"updateDate\":\"2016-08-02T09:53:13\"}","timestamp":"2016-08-02T04:53:13.954Z"}
+{"level":"info","message":"От клиента: {\"password\":\"123\",\"confirmPassword\":\"123\"}","timestamp":"2016-08-02T04:53:43.004Z"}
+{"level":"info","message":"Retrieving All Resource's:","timestamp":"2016-08-02T18:39:36.552Z"}
+{"level":"info","message":"Current user: 57878b994230774e3167f6e1","timestamp":"2016-08-02T18:39:36.558Z"}
+{"level":"info","message":"Retrieving All event's:","timestamp":"2016-08-02T18:39:36.558Z"}
+{"level":"info","message":"Retrieving all user's","timestamp":"2016-08-02T18:39:38.737Z"}
+{"level":"info","message":"От клиента: {\"status\":true}","timestamp":"2016-08-02T18:39:40.549Z"}
+{"level":"info","message":"Пользователь: {\"status\":true,\"updateDate\":\"2016-08-02T23:39:40\"}","timestamp":"2016-08-02T18:39:40.552Z"}
+{"level":"info","message":"От клиента: {\"status\":false}","timestamp":"2016-08-02T18:39:41.931Z"}
+{"level":"info","message":"Пользователь: {\"status\":false,\"updateDate\":\"2016-08-02T23:39:41\"}","timestamp":"2016-08-02T18:39:41.932Z"}
+{"level":"info","message":"От клиента: {\"password\":\"123\",\"confirmPassword\":\"123\"}","timestamp":"2016-08-02T18:40:02.530Z"}
+{"level":"info","message":"От клиента: {\"status\":true}","timestamp":"2016-08-02T18:42:51.745Z"}
+{"level":"info","message":"Пользователь: {\"status\":true,\"updateDate\":\"2016-08-02T23:42:51\"}","timestamp":"2016-08-02T18:42:51.745Z"}
+{"level":"info","message":"От клиента: {\"status\":false}","timestamp":"2016-08-02T18:42:52.970Z"}
+{"level":"info","message":"Пользователь: {\"status\":false,\"updateDate\":\"2016-08-02T23:42:52\"}","timestamp":"2016-08-02T18:42:52.970Z"}
+{"level":"info","message":"Updating user: 5788786c9023171f18b9a486","timestamp":"2016-08-02T18:42:56.530Z"}
+{"level":"info","message":"{\"_id\":\"5788786c9023171f18b9a486\",\"boxId\":\"ff\",\"createDate\":\"2016-07-15T05:45:16\",\"description\":\"Димарик\",\"fio\":\"Димочка\",\"group\":\"administrators\",\"status\":false,\"updateDate\":\"2016-08-02T09:53:43\",\"username\":\"dima\",\"password\":\"123\",\"confirmPassword\":\"123\",\"createOwner\":null,\"updateOwner\":null,\"ok\":1,\"nModified\":1,\"n\":1,\"false\":{\"patch\":true}}","timestamp":"2016-08-02T18:42:56.530Z"}
+{"level":"info","message":"Updating user: 5788786c9023171f18b9a486","timestamp":"2016-08-02T18:43:04.281Z"}
+{"level":"info","message":"{\"_id\":\"5788786c9023171f18b9a486\",\"boxId\":\"ff\",\"createDate\":\"2016-07-15T05:45:16\",\"description\":\"Димарик\",\"fio\":\"Димочка\",\"group\":\"administrators\",\"status\":false,\"updateDate\":\"2016-08-02T09:53:43\",\"username\":\"dima\",\"password\":\"123\",\"confirmPassword\":\"123\",\"createOwner\":null,\"updateOwner\":null,\"ok\":1,\"nModified\":1,\"n\":1,\"false\":{\"patch\":true}}","timestamp":"2016-08-02T18:43:04.281Z"}
+{"level":"info","message":"Updating user: 5788786c9023171f18b9a486","timestamp":"2016-08-02T18:43:04.998Z"}
+{"level":"info","message":"{\"_id\":\"5788786c9023171f18b9a486\",\"boxId\":\"ff\",\"createDate\":\"2016-07-15T05:45:16\",\"description\":\"Димарик\",\"fio\":\"Димочка\",\"group\":\"administrators\",\"status\":false,\"updateDate\":\"2016-08-02T09:53:43\",\"username\":\"dima\",\"password\":\"123\",\"confirmPassword\":\"123\",\"createOwner\":null,\"updateOwner\":null,\"ok\":1,\"nModified\":1,\"n\":1,\"false\":{\"patch\":true}}","timestamp":"2016-08-02T18:43:04.999Z"}
+{"level":"info","message":"Updating user: 5788786c9023171f18b9a486","timestamp":"2016-08-02T18:43:05.462Z"}
+{"level":"info","message":"{\"_id\":\"5788786c9023171f18b9a486\",\"boxId\":\"ff\",\"createDate\":\"2016-07-15T05:45:16\",\"description\":\"Димарик\",\"fio\":\"Димочка\",\"group\":\"administrators\",\"status\":false,\"updateDate\":\"2016-08-02T09:53:43\",\"username\":\"dima\",\"password\":\"123\",\"confirmPassword\":\"123\",\"createOwner\":null,\"updateOwner\":null,\"ok\":1,\"nModified\":1,\"n\":1,\"false\":{\"patch\":true}}","timestamp":"2016-08-02T18:43:05.462Z"}
+{"level":"info","message":"Updating user: 5788786c9023171f18b9a486","timestamp":"2016-08-02T18:43:05.753Z"}
+{"level":"info","message":"{\"_id\":\"5788786c9023171f18b9a486\",\"boxId\":\"ff\",\"createDate\":\"2016-07-15T05:45:16\",\"description\":\"Димарик\",\"fio\":\"Димочка\",\"group\":\"administrators\",\"status\":false,\"updateDate\":\"2016-08-02T09:53:43\",\"username\":\"dima\",\"password\":\"123\",\"confirmPassword\":\"123\",\"createOwner\":null,\"updateOwner\":null,\"ok\":1,\"nModified\":1,\"n\":1,\"false\":{\"patch\":true}}","timestamp":"2016-08-02T18:43:05.754Z"}
+{"level":"info","message":"Updating user: 5788786c9023171f18b9a486","timestamp":"2016-08-02T18:43:06.074Z"}
+{"level":"info","message":"{\"_id\":\"5788786c9023171f18b9a486\",\"boxId\":\"ff\",\"createDate\":\"2016-07-15T05:45:16\",\"description\":\"Димарик\",\"fio\":\"Димочка\",\"group\":\"administrators\",\"status\":false,\"updateDate\":\"2016-08-02T09:53:43\",\"username\":\"dima\",\"password\":\"123\",\"confirmPassword\":\"123\",\"createOwner\":null,\"updateOwner\":null,\"ok\":1,\"nModified\":1,\"n\":1,\"false\":{\"patch\":true}}","timestamp":"2016-08-02T18:43:06.074Z"}
+{"level":"info","message":"Updating user: 5788786c9023171f18b9a486","timestamp":"2016-08-02T18:44:36.760Z"}
+{"level":"info","message":"{\"_id\":\"5788786c9023171f18b9a486\",\"boxId\":\"ff\",\"createDate\":\"2016-07-15T05:45:16\",\"description\":\"Димарик\",\"fio\":\"Димочка\",\"group\":\"administrators\",\"status\":false,\"updateDate\":\"2016-08-02T09:53:43\",\"username\":\"dima\",\"password\":\"123\",\"confirmPassword\":\"123\",\"createOwner\":\"\",\"updateOwner\":\"\",\"ok\":1,\"nModified\":1,\"n\":1,\"false\":{\"patch\":true}}","timestamp":"2016-08-02T18:44:36.760Z"}
+{"level":"info","message":"От клиента: {\"status\":true}","timestamp":"2016-08-02T18:50:45.616Z"}
+{"level":"info","message":"Пользователь: {\"status\":true,\"updateDate\":\"2016-08-02T23:50:45\"}","timestamp":"2016-08-02T18:50:45.617Z"}
+{"level":"info","message":"От клиента: {\"status\":false}","timestamp":"2016-08-02T18:50:48.491Z"}
+{"level":"info","message":"Пользователь: {\"status\":false,\"updateDate\":\"2016-08-02T23:50:48\"}","timestamp":"2016-08-02T18:50:48.492Z"}
+{"level":"info","message":"Updating user: 5788786c9023171f18b9a486","timestamp":"2016-08-02T18:51:59.406Z"}
+{"level":"info","message":"{\"_id\":\"5788786c9023171f18b9a486\",\"boxId\":\"ff\",\"createDate\":\"2016-07-15T05:45:16\",\"description\":\"Димарик\",\"fio\":\"Димочка\",\"group\":\"administrators\",\"status\":false,\"updateDate\":\"2016-08-02T09:53:43\",\"username\":\"dima\",\"password\":\"123\",\"confirmPassword\":\"123\",\"createOwner\":\"\",\"updateOwner\":\"\",\"ok\":1,\"nModified\":1,\"n\":1,\"false\":{\"patch\":true}}","timestamp":"2016-08-02T18:51:59.406Z"}
+{"level":"info","message":"Retrieving All Resource's:","timestamp":"2016-08-02T18:52:39.198Z"}
+{"level":"info","message":"Current user: 57878b994230774e3167f6e1","timestamp":"2016-08-02T18:52:39.210Z"}
+{"level":"info","message":"Retrieving All event's:","timestamp":"2016-08-02T18:52:39.210Z"}
+{"level":"info","message":"Retrieving all user's","timestamp":"2016-08-02T18:52:40.970Z"}
+{"level":"info","message":"Updating user: 5788786c9023171f18b9a486","timestamp":"2016-08-02T18:52:43.910Z"}
+{"level":"info","message":"{\"_id\":\"5788786c9023171f18b9a486\",\"boxId\":\"ff\",\"createDate\":\"2016-07-15T05:45:16\",\"description\":\"Димарик\",\"fio\":\"Димочка\",\"group\":\"administrators\",\"status\":\"false\",\"updateDate\":\"2016-08-02T23:51:59\",\"username\":\"dima\",\"password\":null,\"confirmPassword\":null,\"createOwner\":null,\"updateOwner\":null,\"false\":{\"patch\":true}}","timestamp":"2016-08-02T18:52:43.910Z"}
+{"message":"No password was given","stack":"MissingPasswordError: No password was given\n    at model.schema.methods.setPassword (/mnt/raid/proj/www/nodejs/makkris/app/node_modules/passport-local-mongoose/index.js:88:17)\n    at /mnt/raid/proj/www/nodejs/makkris/app/controllers/user.js:86:15\n    at Query.<anonymous> (/mnt/raid/proj/www/nodejs/makkris/app/node_modules/mongoose/lib/model.js:3331:16)\n    at /mnt/raid/proj/www/nodejs/makkris/app/node_modules/kareem/index.js:259:21\n    at /mnt/raid/proj/www/nodejs/makkris/app/node_modules/kareem/index.js:127:16\n    at _combinedTickCallback (internal/process/next_tick.js:67:7)\n    at process._tickCallback (internal/process/next_tick.js:98:9)","name":"MissingPasswordError","level":"info","timestamp":"2016-08-02T18:52:43.912Z"}
+{"level":"info","message":"Retrieving All Resource's:","timestamp":"2016-08-02T18:53:30.438Z"}
+{"level":"info","message":"Current user: 57878b994230774e3167f6e1","timestamp":"2016-08-02T18:53:30.442Z"}
+{"level":"info","message":"Retrieving All event's:","timestamp":"2016-08-02T18:53:30.442Z"}
+{"level":"info","message":"Retrieving all user's","timestamp":"2016-08-02T18:53:32.421Z"}
+{"level":"info","message":"От клиента: {\"description\":\"Димарик123\"}","timestamp":"2016-08-02T18:53:46.346Z"}
+{"level":"info","message":"Пользователь: {\"description\":\"Димарик123\",\"updateDate\":\"2016-08-02T23:53:46\"}","timestamp":"2016-08-02T18:53:46.346Z"}

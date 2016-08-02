@@ -31,9 +31,9 @@ router.get('/', function (req, res) {
         }
     }
 });
-
+//
 router.post('/', passport.authenticate('local'), function (req, res) {
-    console.log("Ваш пользователь: " + req.user.username);
+    console.log("The logged name user: " + req.user.username);
 
     if (!req.user) {
         res.render('login', {user: req.user, title: "Авторизуйтесь"});
