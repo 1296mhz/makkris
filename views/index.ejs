@@ -50,7 +50,7 @@
                         <li class="divider"></li>
                         <li><a class="update-event" href="#updateEvent">Редактировать</a></li>
                         <li><a class="delete-event" href="#deleteEvent">Удалить</a></li>
-                      </ul>
+                    </ul>
                 </li>
                 <li>
                     <a class="delete-event" href="#help">Помощь</a>
@@ -58,7 +58,13 @@
                 <li>
                     <a class="logout" href="/logout">Выход</a>
                 </li>
+
             </ul>
+           <ul class="nav navbar-nav navbar-right">
+               <li>
+               <a class="navbar-brand">Вы вошли как <%= user.username %></a>
+               </li>
+           </ul>
         </div>
     </div>
 </div>

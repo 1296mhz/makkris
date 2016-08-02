@@ -13,35 +13,48 @@ router.get('/', function (req, res) {
             loggedIn: false,
             title: "Авторизуйтесь!"
         };
-        
+
         //res.json(answer)
         res.render('login', {user: req.user, title: "Авторизуйтесь"});
 
     }
     else {
-        var answer = {
-            user: req.user,
-            loggedIn: true,
-            title: "Панель управления"
-        };
-        res.json(answer)
+        if (req.user.status == 'true') {
+            var answer = {
+                user: req.user,
+                loggedIn: true,
+                title: "Панель управления"
+            };
+            res.json(answer)
+        } else {
+            res.render('login', {user: req.user, title: "Авторизуйтесь"});
         }
+    }
 });
-
 
 router.post('/', passport.authenticate('local'), function (req, res) {
     console.log("Ваш пользователь: " + req.user.username);
 
-    var role;
-    if (req.user) {
-        req.session.save(function (err) {
-            if (err) {
-            }
-            return;
-        });
-        role = req.user.role;
+    if (!req.user) {
+        res.render('login', {user: req.user, title: "Авторизуйтесь"});
+    } else {
+
+        if (req.user.status == 'true') {
+            var role;
+
+            req.session.save(function (err) {
+                if (err) {
+                }
+                return;
+            });
+            role = req.user.role;
+            console.log("Статистика пользователя: " + req.user);
+            res.redirect('/');
+        } else {
+            console.log("Пользователь: "+req.user.username+" отключен!")
+            res.render('login', {user: req.user, title: "Авторизуйтесь"});
+        }
     }
-    res.redirect('/');
 });
 
 

@@ -6,7 +6,8 @@ UserModel = Backbone.Model.extend({
     },
      defaults: {
         username: null,
-        password: "123",
+        password: null, 
+        confirmPassword: null,
         group: null,
         boxId: null,
         fio: null,

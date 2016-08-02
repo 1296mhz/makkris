@@ -4,30 +4,33 @@
 function User() {
 }
 
-User.prototype.table = function (usertableid, columnsarray) {
-
-    var columns = columnsarray;
-    var Users = Backbone.Collection.extend({
-        model: UserModel,
-        url: "/user"
-    });
-
-    var users = new Users();
-// Initialize a new Grid instance
-    var grid = new Backgrid.Grid({
-        columns: columns,
-        collection: users
-    });
-
-// Render the grid and attach the root to your HTML document
-    $("#" + usertableid).append(grid.render().el);
-
-// Fetch some countries from the url
-    users.fetch({reset: true});
-};
-
-
 User.prototype.pageableTable = function (usertableid) {
+
+    var StatusCell = Backgrid.Cell.extend({
+        events: {
+            'click .toggleSw': 'toggleSwitch'
+        },
+
+        toggleSwitch: function(e){
+            e.preventDefault();
+            var thisModel = new UserModel({
+                urlRoot: "/user",
+                idAttribute: "_id"
+            });
+            console.log(thisModel);
+            thisModel = this.model;
+            (thisModel.get('status')) ? thisModel.set({status: false}) : thisModel.set({status: true});
+            console.log(thisModel.changedAttributes());
+            thisModel.save(thisModel.changedAttributes(), {patch: true})
+        },
+        render: function () {
+             var statusClass = "";
+            (this.model.get('status')) ? statusClass = "alert-success " : statusClass = "alert-danger ";
+            this.$el.html('<button class=\"' + statusClass +'btn btn-default button_centered toggleSw" ><span class="glyphicon glyphicon-off" aria-hidden="true"></span></button>');
+            return this;
+        }
+    });
+
 
     var ResetPassword = Backgrid.Cell.extend({
         events: {
@@ -49,7 +52,6 @@ User.prototype.pageableTable = function (usertableid) {
             modalWindow.createModalWindow();
             var UserModalForm = Backbone.Model.extend({
                 schema: {
-
                     password: {
                         type: 'Password',
                         validators: ['required']
@@ -81,23 +83,22 @@ User.prototype.pageableTable = function (usertableid) {
 
                 var errors = form.commit(); // runs schema validation
                 if (errors) {
-                    console.log(errors);
+                 //   console.log(errors);
 
                     var options = {};
                     // Run the effect
-                    $("#myModal").effect( "shake" );
-
+                    $("#myModal").effect("shake");
 
                 } else {
                     var data = form.getValue();
-                    console.log(data)
+                    //далее сохраняем модель
+                  //  console.log(data)
+                    thisModel.set(data);
+                    console.log("Изменения: "+thisModel.changedAttributes());
+                    thisModel.save(thisModel.changedAttributes(), {patch: true})
                     $('.mw').empty();
                 }
-
-
             });
-
-
         },
         render: function () {
             this.$el.html('<button class="btn btn-default button_centered resetPasswordButton" data-toggle="modal" data-target="#myModal"><span class="glyphicon glyphicon-remove" aria-hidden="true"></span></button>');
@@ -163,7 +164,7 @@ User.prototype.pageableTable = function (usertableid) {
     }, {
         name: "status",
         label: "Состояние",
-        cell: "string"
+        cell: StatusCell
     }, {
         name: "description",
         label: "Описание",
@@ -216,8 +217,8 @@ User.prototype.pageableTable = function (usertableid) {
     });
 
 // Render the grid
-    var $example2 = $("#" + usertableid);
-    $example2.append(pageableGrid.render().el);
+    var $userTable = $("#" + usertableid);
+    $userTable.append(pageableGrid.render().el);
 
 // Initialize the paginator
     var paginator = new Backgrid.Extension.Paginator({
@@ -225,7 +226,7 @@ User.prototype.pageableTable = function (usertableid) {
     });
 
 // Render the paginator
-    $example2.after(paginator.render().el);
+    $userTable.after(paginator.render().el);
 
 // Initialize a client-side filter to filter on the client
 // mode pageable collection's cache.
@@ -236,7 +237,7 @@ User.prototype.pageableTable = function (usertableid) {
 
 
 // Render the filter
-    $example2.before(filter.render().el);
+    $userTable.before(filter.render().el);
 
 // Add some space to the filter and move it to the right
     $(filter.el).css({float: "right", margin: "20px"});

@@ -18,12 +18,12 @@ var Account = require('./models/account');
 var db = require('./libs/mongodriver');
 var config = require('./libs/config');
 var app = express();
-
+/*
 app.use(function (req, res, next) {
   console.log('Time:', Date.now());
   next();
 });
-
+*/
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'ejs');
