@@ -6,27 +6,27 @@ var _ = require('underscore');
 var log = require('../libs/log')(module);
 var ObjectID = require('mongodb').ObjectID;
 var Account = require('../models/account');
-var Utilz = require('../libs/Utilz')
+var Utilz = require('../libs/Utilz');
 var utilz = new Utilz();
 
 exports.findUserAll = function (req, res) {
-    log.info('Retrieving all user\'s');
-    var collection = db.get().collection('accounts');
-        collection.find({}, {
-            "username": true,
-            "_id": true,
-            "group": true,
-            "boxId": true,
-            "fio": true,
-            "description": true,
-            "status": true,
-            "createOwner": true,
-            "updateOwner": true,
-            "createDate": true,
-            "updateDate": true
-        }).toArray(function (err, items) {
-            res.send(items);
-        });
+            log.info('Retrieving all user\'s');
+            var collection = db.get().collection('accounts');
+            collection.find({}, {
+                "username": true,
+                "_id": true,
+                "group": true,
+                "boxId": true,
+                "fio": true,
+                "description": true,
+                "status": true,
+                "createOwner": true,
+                "updateOwner": true,
+                "createDate": true,
+                "updateDate": true
+            }).toArray(function (err, items) {
+                res.send(items);
+            });
 
 };
 
@@ -70,7 +70,7 @@ exports.addUser = function (req, res) {
         "boxId",
         "fio",
         "status"  
-    ]
+    ];
 
     // var specialValidateAndSet = [
     //
@@ -107,7 +107,7 @@ exports.addUser = function (req, res) {
 exports.updateUser = function (req, res) {
     var id = new ObjectID(req.params.id);
     var user = req.body;
-    log.info('Updating user: ' + id);
+    log.info('Обновить пользователя: ' + id);
 
     log.info(JSON.stringify(user));
     Account.findById({_id: id}, function (err, p) {
@@ -152,10 +152,7 @@ exports.updateUser = function (req, res) {
 
 exports.updateOnePropertyUser = function ( req, res) {
     var id = req.params.id;
-    log.info("От клиента: "+JSON.stringify(req.body));
-
-
-    var account = {};
+      var account = {};
     _.each(req.body, function(num, key){
         if (req.body[key] != undefined) {
             account[key] = req.body[key]
@@ -229,7 +226,7 @@ exports.updateOnePropertyUser = function ( req, res) {
 
 exports.deleteUser = function (req, res) {
     var id = req.params.id;
-    log.info('Deleting user: ' + id);
+    log.info('Удаление пользователя: ' + id);
     var collection = db.get().collection('accounts');
         collection.remove({'_id': new ObjectID(id)}, {safe: true}, function (err, result) {
             if (err) {

@@ -155,14 +155,12 @@ User.prototype.pageableTable = function (usertableid) {
         cell: "string" // This is converted to "StringCell" and a corresponding class in the Backgrid package namespace is looked up
     }, {
         name: "",
-        label: "Сбросить пароль",
+        label: "Пароль",
         cell: ResetPassword
     }, {
         name: "group",
         label: "Группа",
         cell: "string", // An integer cell is a number cell that displays humanized integers
-
-
     }, {
         name: "fio",
         label: "Фио",

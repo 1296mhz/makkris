@@ -11,7 +11,7 @@ UserModel = Backbone.Model.extend({
         group: "standart",
         boxId: "unknown",
         fio: "Иван Иванович Иванов",
-        status: false,
+        status: true,
         description: "Пользователь",
         createOwner: null,
         updateOwner: null

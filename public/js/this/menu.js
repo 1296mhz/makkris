@@ -7,6 +7,7 @@ var mainFrame = new mainFrame();
 //Пользователи
 $('.user-control').on('click', function () {
     mainFrame.clearFrame('mainframe');
+    mainFrame.clearFrameClass('button-panel');
     // mainFrame.addFrame('mainframe','user-table');
     $('#mainframe').append("<div id='user-table'></div>");
     var user = new User();

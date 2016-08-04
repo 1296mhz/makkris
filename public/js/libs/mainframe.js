@@ -10,6 +10,11 @@ mainFrame.prototype.clearFrame = function (framenameid) {
     $('#'+framenameid).empty();
 };
 
+mainFrame.prototype.clearFrameClass = function (framenameid) {
+    console.log(framenameid);
+    $('.'+framenameid).empty();
+};
+
 mainFrame.prototype.addFrame = function (framenameid, newframenameid){
     console.log("Добавить внутрь новый фрейм");
     $('#'+framenameid).append( "<div id="+newframenameid+">");

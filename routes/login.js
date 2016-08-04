@@ -40,7 +40,7 @@ router.post('/', passport.authenticate('local'), function (req, res) {
         res.render('login', {user: req.user, title: "Авторизуйтесь"});
     } else {
 
-        if (req.user.status == 'true') {
+       if (req.user.status == 'true') {
             var role;
 
             req.session.save(function (err) {
@@ -51,10 +51,10 @@ router.post('/', passport.authenticate('local'), function (req, res) {
             role = req.user.role;
             console.log("Статистика пользователя: " + req.user);
             res.redirect('/');
-        } else {
+       } else {
             console.log("Пользователь: "+req.user.username+" отключен!")
             res.render('login', {user: req.user, title: "Авторизуйтесь"});
-        }
+       }
     }
 });
 

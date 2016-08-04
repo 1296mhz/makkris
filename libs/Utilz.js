@@ -43,4 +43,19 @@ Utilz.prototype.nowDate = function () {
     return currentDate[0];
 }
 
+Utilz.prototype.isLoggedIn = function (req, res, next) {
+        if (!req.user) {
+            res.render('login', {user: req.user, title: "Авторизуйтесь"});
+        } else {
+            if (req.user.status == 'true') {
+                console.log("Тада!")
+                next();
+            } else {
+                console.log("Пользователь: "+req.user.username+" отключен!");
+                res.render('login', {user: req.user, title: "Авторизуйтесь"});
+            }
+        }
+    };
+
+
 module.exports = Utilz;
