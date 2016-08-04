@@ -6,6 +6,7 @@ function User() {
 
 User.prototype.pageableTable = function (usertableid) {
 
+    //Столбец состояния вкл/откл пользователь
     var StatusCell = Backgrid.Cell.extend({
         events: {
             'click .toggleSw': 'toggleSwitch'
@@ -21,7 +22,7 @@ User.prototype.pageableTable = function (usertableid) {
             thisModel = this.model;
             (thisModel.get('status')) ? thisModel.set({status: false}) : thisModel.set({status: true});
             console.log(thisModel.changedAttributes());
-            thisModel.save(thisModel.changedAttributes(), {patch: true})
+            thisModel.save(thisModel.changedAttributes(), {patch: true});
         },
         render: function () {
              var statusClass = "";
@@ -31,7 +32,7 @@ User.prototype.pageableTable = function (usertableid) {
         }
     });
 
-
+    //Столбец сброса или установки пароля
     var ResetPassword = Backgrid.Cell.extend({
         events: {
             'click .resetPasswordButton': 'resetPassword'
@@ -66,16 +67,17 @@ User.prototype.pageableTable = function (usertableid) {
                 }
             });
 
+            //Открыть мадальное окно
             var userModalForm = new UserModalForm();
 
+            //Отрендерить форму
             var form = new Backbone.Form({
                 model: userModalForm
             }).render();
 
-
+            //Вывести форму в модальное окно
             $('.modal-body').append(form.el);
             $('.closeUserWindowModal').click(function () {
-
                 $('.mw').empty();
             });
 
@@ -83,7 +85,6 @@ User.prototype.pageableTable = function (usertableid) {
 
                 var errors = form.commit(); // runs schema validation
                 if (errors) {
-                 //   console.log(errors);
 
                     var options = {};
                     // Run the effect
@@ -132,7 +133,7 @@ User.prototype.pageableTable = function (usertableid) {
             var thisModel = new UserModel({});
 
             thisModel = this.model;
-            console.log("Изменили: "+thisModel.changedAttributes());
+            console.log("Изменили: "+JSON.stringify(thisModel.changedAttributes()));
             if(thisModel.changedAttributes()){
                 thisModel.save(thisModel.changedAttributes(), {patch: true})
             }
@@ -159,7 +160,9 @@ User.prototype.pageableTable = function (usertableid) {
     }, {
         name: "group",
         label: "Группа",
-        cell: "string" // An integer cell is a number cell that displays humanized integers
+        cell: "string", // An integer cell is a number cell that displays humanized integers
+
+
     }, {
         name: "fio",
         label: "Фио",
@@ -175,19 +178,23 @@ User.prototype.pageableTable = function (usertableid) {
     }, {
         name: "createOwner",
         label: "Создал",
-        cell: "string"
+        cell: "string",
+        editable: false
     }, {
         name: "updateOwner",
         label: "Редактировал",
-        cell: "string"
+        cell: "string",
+        editable: false
     }, {
         name: "createDate",
         label: "Дата создания",
-        cell: "date"
+        cell: "date",
+        editable: false
     }, {
         name: "updateDate",
         label: "Дата изменения",
-        cell: "date" // Renders the value in an HTML anchor element
+        cell: "date", // Renders the value in an HTML anchor element
+        editable: false
     }, {
         name: '',
         label: 'Действие',
@@ -205,8 +212,9 @@ User.prototype.pageableTable = function (usertableid) {
         mode: "client" // page entirely on the client side
     });
 
-
     var pageableUsers = new PageableUsers();
+
+    $('.main-container').append('<div class="button-panel"><button class="btn btn-default alert-info createUser">Создать</button></div>');
 
 // Set up a grid to use the pageable collection
     var pageableGrid = new Backgrid.Grid({
@@ -238,7 +246,6 @@ User.prototype.pageableTable = function (usertableid) {
         fields: ['username']
     });
 
-
 // Render the filter
     $userTable.before(filter.render().el);
 
@@ -247,5 +254,12 @@ User.prototype.pageableTable = function (usertableid) {
 
 // Fetch some data
     pageableUsers.fetch({reset: true});
+
+    $('.createUser').click(function (){
+        var newUser = new UserModel();
+        console.log(newUser);
+        pageableUsers.add(newUser);
+        console.log(JSON.stringify(pageableUsers));
+    });
 
 }

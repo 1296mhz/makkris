@@ -5,16 +5,14 @@ UserModel = Backbone.Model.extend({
     initialize: function () {
     },
      defaults: {
-        username: null,
-        password: null, 
-        confirmPassword: null,
-        group: null,
-        boxId: null,
-        fio: null,
-        status: null,
-        description: null,
-        createDate: null,
-        updateDate: null,
+        username: "newuser",
+        password: "123",
+        confirmPassword: "123",
+        group: "standart",
+        boxId: "unknown",
+        fio: "Иван Иванович Иванов",
+        status: false,
+        description: "Пользователь",
         createOwner: null,
         updateOwner: null
     }

@@ -20,6 +20,8 @@ exports.findUserAll = function (req, res) {
             "fio": true,
             "description": true,
             "status": true,
+            "createOwner": true,
+            "updateOwner": true,
             "createDate": true,
             "updateDate": true
         }).toArray(function (err, items) {
@@ -40,6 +42,8 @@ exports.findUserById = function (req, res) {
             "fio": true,
             "description": true,
             "status": true,
+            "createOwner": true,
+            "updateOwner": true,
             "createDate": true,
             "updateDate": true
         }, function (err, item) {
@@ -50,13 +54,45 @@ exports.findUserById = function (req, res) {
 exports.addUser = function (req, res) {
     var user = req.body;
     log.info('Adding user: ' + JSON.stringify(user));
+
+    var account = {};
+    _.each(req.body, function(num, key){
+        if (req.body[key] != undefined) {
+            account[key] = req.body[key]
+        }
+    });
+
+    var validateKeys = [
+        "username",
+        "group",
+        "password",
+        "confirmPassword",
+        "boxId",
+        "fio",
+        "status"  
+    ]
+
+    // var specialValidateAndSet = [
+    //
+    // ];
+    
+    _.each(validateKeys, function(validateKey){
+        console.log(validateKey);
+        console.log(account[validateKey]);
+        // (account[validateKey]) ? console.log("OK") : console.log("Fuck");
+    });
+
+
+    account.createOwner = req.user.username;
+    console.log(">>>> "+account.createOwner);
     Account.register(new Account({
-        username: req.body.username,
-        group: req.body.group,
-        boxId: req.body.boxId,
-        fio: req.body.fio,
-        status: req.body.status,
-        description: req.body.description,
+        username: account.username,
+        group: account.group,
+        boxId: account.boxId,
+        fio: account.fio,
+        status: account.status,
+        description: account.description,
+        createOwner: account.createOwner, //трэш не рабютает
         createDate: utilz.nowDate()
     }), req.body.password, function (err, account) {
         if (err) {

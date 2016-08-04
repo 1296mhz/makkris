@@ -15,6 +15,8 @@ var Account = new Schema({
     description: String,
     status: String,
     picture: String,
+    createOwner: String,
+    updateOwner: String,
     createDate: String,
     updateDate: String
 });

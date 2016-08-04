@@ -31,6 +31,7 @@ router.get('/', function (req, res) {
         }
     }
 });
+
 //
 router.post('/', passport.authenticate('local'), function (req, res) {
     console.log("The logged name user: " + req.user.username);
