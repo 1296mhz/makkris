@@ -52,7 +52,6 @@ exports.findBoxResourcesById = function (req, res) {
                 }
             }
         });
-    
 };
 
 //Добавление ремонтного бокса

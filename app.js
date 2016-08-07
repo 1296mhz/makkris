@@ -13,7 +13,7 @@ var user = require('./routes/user');
 var resources = require('./routes/resources');
 var customer = require('./routes/customer');
 var event = require('./routes/event');
-var status = require('./routes/status');
+var groups = require('./routes/groups');
 var LocalStrategy = require('passport-local').Strategy;
 var Account = require('./models/account');
 var db = require('./libs/mongodriver');
@@ -55,7 +55,7 @@ app.use('/logout', logout);
 app.use('/resources', resources);
 app.use('/customer', customer);
 app.use('/event', event);
-app.use('/status', status);
+app.use('/groups', groups);
 // passport config
 passport.use(new LocalStrategy(Account.authenticate()));
 passport.serializeUser(Account.serializeUser());

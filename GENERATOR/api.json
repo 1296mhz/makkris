@@ -1,8 +1,7 @@
 {
   "routes": {
     "routeName": [
-      "typeOfWork",
-      "status"
+      "groups"
     ],
     "controllerPath": "../controllers",
     "routerPath": "../routes",

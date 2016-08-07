@@ -4,6 +4,10 @@
 function User() {
 }
 
+User.prototype.getGroups = function () {
+
+}
+
 User.prototype.pageableTable = function (usertableid) {
 
     //Столбец состояния вкл/откл пользователь
@@ -12,7 +16,7 @@ User.prototype.pageableTable = function (usertableid) {
             'click .toggleSw': 'toggleSwitch'
         },
 
-        toggleSwitch: function(e){
+        toggleSwitch: function (e) {
             e.preventDefault();
             var thisModel = new UserModel({
                 urlRoot: "/user",
@@ -25,12 +29,52 @@ User.prototype.pageableTable = function (usertableid) {
             thisModel.save(thisModel.changedAttributes(), {patch: true});
         },
         render: function () {
-             var statusClass = "";
+            var statusClass = "";
             (this.model.get('status')) ? statusClass = "alert-success " : statusClass = "alert-danger ";
-            this.$el.html('<button class=\"' + statusClass +'btn btn-default button_centered toggleSw" ><span class="glyphicon glyphicon-off" aria-hidden="true"></span></button>');
+            this.$el.html('<button class=\"' + statusClass + 'btn btn-default button_centered toggleSw" ><span class="glyphicon glyphicon-off" aria-hidden="true"></span></button>');
             return this;
         }
     });
+
+
+    //Группы
+    var GroupSelector = Backgrid.Cell.extend({
+        events: {
+            'click .changeGroupButton': 'changeGroup'
+        },
+
+        changeGroup: function (e) {
+            e.preventDefault();
+            console.log("Нажал изменить")
+            var stringOption = '';
+            var groupsCollection = new GroupsCollection();
+
+                    var modalWindow = new bmodal();
+                    //Устанавливаем Title окна, кнопку закрытия и сохранения
+                    modalWindow.createModalWindow('Изменить группу', 'closeUserWindowModal', 'saveUserWindowModal');
+
+
+
+        },
+        render: function () {
+
+            var groupsCollection = new GroupsCollection();
+
+           groupsCollection.fetch({
+                success: function () {
+                    console.log("ok");
+                }
+            });
+
+            this.$el.html('<button class="btn btn-default button_centered changeGroupButton" data-toggle="modal" data-target="#myModal">' +
+                '<span class="groupsUsers glyphicon glyphicon-search ' + this.model.get('group') + '" aria-hidden="true"></span>' +
+                '</button>');
+
+            return this;
+
+        }
+    });
+
 
     //Столбец сброса или установки пароля
     var ResetPassword = Backgrid.Cell.extend({
@@ -50,7 +94,8 @@ User.prototype.pageableTable = function (usertableid) {
             thisModel = this.model;
             var modalWindow = new bmodal();
 
-            modalWindow.createModalWindow();
+            //Устанавливаем Title ля окна, кнопку закрытия и сохранения
+            modalWindow.createModalWindow('Сброс пассворда', 'closeUserWindowModal', 'saveUserWindowModal');
             var UserModalForm = Backbone.Model.extend({
                 schema: {
                     password: {
@@ -93,9 +138,9 @@ User.prototype.pageableTable = function (usertableid) {
                 } else {
                     var data = form.getValue();
                     //далее сохраняем модель
-                  //  console.log(data)
+                    //  console.log(data)
                     thisModel.set(data);
-                    console.log("Изменения: "+thisModel.changedAttributes());
+                    console.log("Изменения: " + thisModel.changedAttributes());
                     thisModel.save(thisModel.changedAttributes(), {patch: true})
                     $('.mw').empty();
                 }
@@ -133,19 +178,17 @@ User.prototype.pageableTable = function (usertableid) {
             var thisModel = new UserModel({});
 
             thisModel = this.model;
-            console.log("Изменили: "+JSON.stringify(thisModel.changedAttributes()));
-            if(thisModel.changedAttributes()){
+            console.log("Изменили: " + JSON.stringify(thisModel.changedAttributes()));
+            if (thisModel.changedAttributes()) {
                 thisModel.save(thisModel.changedAttributes(), {patch: true})
             }
 
         },
-
         render: function () {
             this.$el.html('<div class="button_centered"><button class="btn btn-default button_margin removeButton"><span class="glyphicon glyphicon-remove" aria-hidden="true"></span></button><button class="btn btn-default button_margin saveButton"><span class="glyphicon glyphicon-ok" aria-hidden="true"></span></button></div>');
             return this;
         }
     });
-
 
     var columns = [{
 
@@ -160,7 +203,8 @@ User.prototype.pageableTable = function (usertableid) {
     }, {
         name: "group",
         label: "Группа",
-        cell: "string", // An integer cell is a number cell that displays humanized integers
+        cell: GroupSelector, // An integer cell is a number cell that displays humanized integers
+        editable: false
     }, {
         name: "fio",
         label: "Фио",
@@ -253,11 +297,12 @@ User.prototype.pageableTable = function (usertableid) {
 // Fetch some data
     pageableUsers.fetch({reset: true});
 
-    $('.createUser').click(function (){
+    $('.createUser').click(function () {
         var newUser = new UserModel();
         console.log(newUser);
         pageableUsers.add(newUser);
         console.log(JSON.stringify(pageableUsers));
     });
+
 
 }

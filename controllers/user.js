@@ -84,10 +84,10 @@ exports.addUser = function (req, res) {
 
 
     account.createOwner = req.user.username;
-    console.log(">>>> "+account.createOwner);
+
     Account.register(new Account({
         username: account.username,
-        group: account.group,
+        group: 'new',
         boxId: account.boxId,
         fio: account.fio,
         status: account.status,
