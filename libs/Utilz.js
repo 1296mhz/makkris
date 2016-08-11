@@ -49,8 +49,9 @@ Utilz.prototype.isLoggedIn = function (req, res, next) {
         } else {
             if (req.user.status == 'true') {
                 console.log("Тада!")
-                next();
+                return next();
             } else {
+                //return next()
                 console.log("Пользователь: "+req.user.username+" отключен!");
                 res.render('login', {user: req.user, title: "Авторизуйтесь"});
             }

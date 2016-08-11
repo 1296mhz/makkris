@@ -10,23 +10,23 @@ var Utilz = require('../libs/Utilz');
 var utilz = new Utilz();
 
 exports.findUserAll = function (req, res) {
-            log.info('Retrieving all user\'s');
-            var collection = db.get().collection('accounts');
-            collection.find({}, {
-                "username": true,
-                "_id": true,
-                "group": true,
-                "boxId": true,
-                "fio": true,
-                "description": true,
-                "status": true,
-                "createOwner": true,
-                "updateOwner": true,
-                "createDate": true,
-                "updateDate": true
-            }).toArray(function (err, items) {
-                res.send(items);
-            });
+    log.info('Retrieving all user\'s');
+    var collection = db.get().collection('accounts');
+    collection.find({}, {
+        "username": true,
+        "_id": true,
+        "group": true,
+        "boxId": true,
+        "fio": true,
+        "description": true,
+        "status": true,
+        "createOwner": true,
+        "updateOwner": true,
+        "createDate": true,
+        "updateDate": true
+    }).toArray(function (err, items) {
+        res.send(items);
+    });
 
 };
 
@@ -34,21 +34,21 @@ exports.findUserById = function (req, res) {
     var id = req.params.id;
     log.info('Retrieving user: ' + id);
     var collection = db.get().collection('accounts');
-        collection.findOne({'_id': new ObjectID(id)}, {
-            "username": true,
-            "_id": true,
-            "group": true,
-            "boxId": true,
-            "fio": true,
-            "description": true,
-            "status": true,
-            "createOwner": true,
-            "updateOwner": true,
-            "createDate": true,
-            "updateDate": true
-        }, function (err, item) {
-            res.send(item);
-        });
+    collection.findOne({'_id': new ObjectID(id)}, {
+        "username": true,
+        "_id": true,
+        "group": true,
+        "boxId": true,
+        "fio": true,
+        "description": true,
+        "status": true,
+        "createOwner": true,
+        "updateOwner": true,
+        "createDate": true,
+        "updateDate": true
+    }, function (err, item) {
+        res.send(item);
+    });
 };
 
 exports.addUser = function (req, res) {
@@ -56,7 +56,7 @@ exports.addUser = function (req, res) {
     log.info('Adding user: ' + JSON.stringify(user));
 
     var account = {};
-    _.each(req.body, function(num, key){
+    _.each(req.body, function (num, key) {
         if (req.body[key] != undefined) {
             account[key] = req.body[key]
         }
@@ -69,14 +69,14 @@ exports.addUser = function (req, res) {
         "confirmPassword",
         "boxId",
         "fio",
-        "status"  
+        "status"
     ];
 
     // var specialValidateAndSet = [
     //
     // ];
-    
-    _.each(validateKeys, function(validateKey){
+
+    _.each(validateKeys, function (validateKey) {
         console.log(validateKey);
         console.log(account[validateKey]);
         // (account[validateKey]) ? console.log("OK") : console.log("Fuck");
@@ -113,16 +113,16 @@ exports.updateUser = function (req, res) {
     Account.findById({_id: id}, function (err, p) {
         if (!p) {
             log.info("Could not load Document");
-          
+
             //return next(new Error('Could not load Document'));
-            res.json({'error': { 'error': err ,'message': 'Document not found'}});
+            res.json({'error': {'error': err, 'message': 'Document not found'}});
         }
         else {
 
             p.setPassword(req.body.password, function (err, user) {
                 if (err) {
                     log.info(err);
-                    res.json({'error': { 'error': err ,'message': 'Password not set'}});
+                    res.json({'error': {'error': err, 'message': 'Password not set'}});
                 } else {
                     var conditions = {_id: new ObjectID(id)}
                         , update = {
@@ -132,13 +132,14 @@ exports.updateUser = function (req, res) {
                         boxId: req.body.boxId,
                         status: req.body.status,
                         description: req.body.description,
+                        updateOwner: req.user.username,
                         updateDate: utilz.nowDate(),
                         hash: user.hash,
                         salt: user.salt
                     };
 
                     Account.update(conditions, update, function (err, place) {
-                        
+
                         if (err) {
                             log.info(err);
                         }
@@ -150,20 +151,20 @@ exports.updateUser = function (req, res) {
     });
 }
 
-exports.updateOnePropertyUser = function ( req, res) {
+exports.updateOnePropertyUser = function (req, res) {
     var id = req.params.id;
-      var account = {};
-    _.each(req.body, function(num, key){
+    var account = {};
+    _.each(req.body, function (num, key) {
         if (req.body[key] != undefined) {
             account[key] = req.body[key]
         }
 
     });
 
-    if(account.password != undefined){
-        if(account.password != account.confirmPassword){
+    if (account.password != undefined) {
+        if (account.password != account.confirmPassword) {
             res.json({message: 'Пароли не совпадают!'});
-        }else{
+        } else {
             console.log("Сохраняем");
 
             Account.findById({_id: id}, function (err, p) {
@@ -171,24 +172,25 @@ exports.updateOnePropertyUser = function ( req, res) {
                     log.info("Could not load Document");
 
                     //return next(new Error('Could not load Document'));
-                    res.json({'error': { 'error': err ,'message': 'Document not found'}});
+                    res.json({'error': {'error': err, 'message': 'Document not found'}});
                 }
                 else {
 
                     p.setPassword(account.password, function (err, user) {
                         if (err) {
                             log.info(err);
-                            res.json({'error': { 'error': err ,'message': 'Password not set'}});
+                            res.json({'error': {'error': err, 'message': 'Password not set'}});
                         } else {
                             console.log(user.salt);
                             console.log(user.status);
-                                var conditions = {_id: new ObjectID(id)}
+                            var conditions = {_id: new ObjectID(id)}
                                 , update = {
+                                updateOwner: req.user.username,
                                 updateDate: utilz.nowDate(),
                                 hash: user.hash,
                                 salt: user.salt
                             };
-                            
+
                             Account.update(conditions, update, function (err, place) {
 
                                 if (err) {
@@ -200,12 +202,13 @@ exports.updateOnePropertyUser = function ( req, res) {
                     });
                 }
             });
-         }
-    }else{
+        }
+    } else {
         delete account.password;
         delete account.confirmPassword;
 
         account.updateDate = utilz.nowDate(),
+        account.updateOwner = req.user.username,
             log.info("Пользователь: " + JSON.stringify(account));
         var idString = new ObjectID(id);
 
@@ -228,14 +231,14 @@ exports.deleteUser = function (req, res) {
     var id = req.params.id;
     log.info('Удаление пользователя: ' + id);
     var collection = db.get().collection('accounts');
-        collection.remove({'_id': new ObjectID(id)}, {safe: true}, function (err, result) {
-            if (err) {
-                res.send({'error': 'An error has occurred - ' + err});
-            } else {
-                console.log('' + result + ' document(s) deleted');
-                res.send(req.body);
-            }
-        });
+    collection.remove({'_id': new ObjectID(id)}, {safe: true}, function (err, result) {
+        if (err) {
+            res.send({'error': 'An error has occurred - ' + err});
+        } else {
+            console.log('' + result + ' document(s) deleted');
+            res.send(req.body);
+        }
+    });
 }
 
 

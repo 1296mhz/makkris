@@ -7,6 +7,7 @@ var mainFrame = new mainFrame();
 //Пользователи
 $('.user-control').on('click', function () {
     mainFrame.clearFrame('mainframe');
+
     mainFrame.clearFrameClass('button-panel');
     // mainFrame.addFrame('mainframe','user-table');
     $('#mainframe').append("<div id='user-table'></div>");
@@ -21,16 +22,19 @@ $('.user-control').on('click', function () {
 $('.boxes-control').on('click', function () {
     console.log("boxes control");
     mainFrame.clearFrame('mainframe');
+    mainFrame.clearFrameClass('button-panel');
  
 });
 
 $('.posts-control').on('click', function () {
     mainFrame.clearFrame('mainframe');
+    mainFrame.clearFrameClass('button-panel');
     console.log("posts control");
 });
 
 $('.typeOfWork-control').on('click', function () {
     mainFrame.clearFrame('mainframe');
+    mainFrame.clearFrameClass('button-panel');
     console.log("Type of work control");
 });
 
@@ -41,6 +45,7 @@ $('.customer-control').on('click', function () {
 
 $('.log-control').on('click', function () {
     mainFrame.clearFrame('mainframe');
+    mainFrame.clearFrameClass('button-panel');
     console.log("Log control");
 
 });
@@ -48,15 +53,18 @@ $('.log-control').on('click', function () {
 //Заявки
 $('.add-event').on('click', function () {
     mainFrame.clearFrame('mainframe');
+    mainFrame.clearFrameClass('button-panel');
     console.log("Add event control");
 });
 
 $('.update-event').on('click', function () {
     mainFrame.clearFrame('mainframe');
+    mainFrame.clearFrameClass('button-panel');
     console.log("Update event");
 });
 
 $('.delete-event').on('click', function () {
     mainFrame.clearFrame('mainframe');
+    mainFrame.clearFrameClass('button-panel');
     console.log("Delete event");
 });

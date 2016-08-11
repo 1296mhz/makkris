@@ -5,39 +5,39 @@ UserModel = Backbone.Model.extend({
     initialize: function () {
     },
     defaults: {
-        username: "newuser",
-        password: "123",
-        confirmPassword: "123",
-        group: "standart",
-        boxId: "unknown",
-        fio: "Иван Иванович Иванов",
-        status: true,
-        description: "Пользователь",
-        createOwner: null,
-        updateOwner: null
+        username:           "newuser",
+        password:           "123",
+        confirmPassword:    "123",
+        group:              "new",
+        boxId:              "unknown",
+        fio:                "Иван Иванович Иванов",
+        status:             true,
+        description:        "Пользователь",
+        createOwner:        null,
+        updateOwner:        null
     }
 });
 
 //Коллекция с юзерами
 UserCollection = Backbone.Collection.extend({
-    model: UserModel,
-    url: "/user",
-    parse: function (data) {
-        return data;
-    }
+        model: UserModel,
+        url: "/user",
+        parse: function (data) {
+            return data;
+        }
 
 });
 
 GroupModel = Backbone.Model.extend({
-    urlRoot: "/groups",
-    idAttribute: "id",
-    initialize: function () {
-    },
-    defaults: {
-        id: null,
-        title: null,
-        name: null
-    }
+        urlRoot: "/groups",
+        idAttribute: "id",
+        initialize: function () {
+        },
+        defaults: {
+            id: null,
+            title: 'новый',
+            name: 'new'
+        }
 });
 
 GroupsCollection = Backbone.Collection.extend({
@@ -47,7 +47,6 @@ GroupsCollection = Backbone.Collection.extend({
     //     return data;
     // }
 });
-
 
 
 

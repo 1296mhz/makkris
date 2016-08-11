@@ -4,11 +4,14 @@
 function User() {
 }
 
-User.prototype.getGroups = function () {
-
-}
-
 User.prototype.pageableTable = function (usertableid) {
+
+    var groups = {
+        new: "новый",
+        administrators: "Администраторы",
+        managers: "Менеджеры",
+        carMechanics: "Авто-слесаря"
+    }
 
     //Столбец состояния вкл/откл пользователь
     var StatusCell = Backgrid.Cell.extend({
@@ -39,37 +42,87 @@ User.prototype.pageableTable = function (usertableid) {
 
     //Группы
     var GroupSelector = Backgrid.Cell.extend({
+
+
         events: {
             'click .changeGroupButton': 'changeGroup'
         },
 
         changeGroup: function (e) {
+            $('.mw').empty();
             e.preventDefault();
-            console.log("Нажал изменить")
-            var stringOption = '';
-            var groupsCollection = new GroupsCollection();
+            console.log("Нажал изменить");
 
-                    var modalWindow = new bmodal();
-                    //Устанавливаем Title окна, кнопку закрытия и сохранения
-                    modalWindow.createModalWindow('Изменить группу', 'closeUserWindowModal', 'saveUserWindowModal');
+            var modalWindow = new bmodal();
+            //Устанавливаем Title окна, кнопку закрытия и сохранения
+            modalWindow.createModalWindow('Изменить группу', 'closeUserWindowModal', 'saveGroupButtonWindowModal');
 
+            var UserModalForm = Backbone.Model.extend({
+                schema: {
+                    group:
+                    {type: 'Select',
+                        options: [
+                            { val: 'new', label: "Новый" },
+                            { val: 'administrators', label: "Администраторы" },
+                            { val: 'managers', label: "Менеджеры" },
+                            { val: 'carMechanics', label: "Авто-слесари" }
+                        ]
+                    }
+                }
+            });
+
+            //Открыть мадальное окно
+            var userModalForm = new UserModalForm({ group: 'new'});
+
+            //Отрендерить форму
+            var form = new Backbone.Form({
+                model: userModalForm
+            }).render();
+
+
+            //Вывести форму в модальное окно
+            $('.modal-body').append(form.el);
+
+            $('.closeUserWindowModal').click(function () {
+                $('.mw').empty();
+            });
+
+
+            form.setValue({ value: 'new' });
+
+            var thisModel = this.model;
+            $('.saveGroupButtonWindowModal').click(function (e) {
+                //  console.log(this.model);
+                var errors = form.commit(); // runs schema validation
+                if (errors) {
+
+                    var options = {};
+                    // Run the effect
+                    $("#myModal").effect("shake");
+
+                } else {
+                    var data = form.getValue();
+
+                    //далее сохраняем модель
+                    //  console.log(data)
+
+                    console.log(thisModel);
+                    thisModel.set(data);
+
+                    console.log("Изменили: " + JSON.stringify(thisModel.changedAttributes()));
+                    thisModel.save(thisModel.changedAttributes(), {patch: true});
+                    $('.mw').empty();
+                }
+            });
 
 
         },
         render: function () {
 
-            var groupsCollection = new GroupsCollection();
-
-           groupsCollection.fetch({
-                success: function () {
-                    console.log("ok");
-                }
-            });
-
             this.$el.html('<button class="btn btn-default button_centered changeGroupButton" data-toggle="modal" data-target="#myModal">' +
-                '<span class="groupsUsers glyphicon glyphicon-search ' + this.model.get('group') + '" aria-hidden="true"></span>' +
+                '<span class="groupsUsers glyphicon glyphicon-search ' + groups[this.model.get('group')] + '" aria-hidden="true"></span> ' +
+                '' + groups[this.model.get('group')] + '' +
                 '</button>');
-
             return this;
 
         }
