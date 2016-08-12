@@ -5510,3 +5510,108 @@
 {"level":"info","message":"Current user: 57878b994230774e3167f6e1","timestamp":"2016-08-11T20:36:58.198Z"}
 {"level":"info","message":"Retrieving All event's:","timestamp":"2016-08-11T20:36:58.198Z"}
 {"level":"info","message":"Retrieving all user's","timestamp":"2016-08-11T20:36:59.878Z"}
+{"level":"info","message":"Retrieving All Resource's:","timestamp":"2016-08-11T20:57:05.782Z"}
+{"level":"info","message":"Current user: 57878b994230774e3167f6e1","timestamp":"2016-08-11T20:57:05.792Z"}
+{"level":"info","message":"Retrieving All event's:","timestamp":"2016-08-11T20:57:05.792Z"}
+{"level":"info","message":"Retrieving all user's","timestamp":"2016-08-11T20:57:07.535Z"}
+{"level":"info","message":"Удаление пользователя: 57a34d8a6b559bb22e20646b","timestamp":"2016-08-12T07:32:33.129Z"}
+{"level":"info","message":"Удаление пользователя: 57acda9fbb2d0653551980a1","timestamp":"2016-08-12T07:32:34.056Z"}
+{"level":"info","message":"Retrieving all user's","timestamp":"2016-08-12T11:25:41.815Z"}
+{"level":"info","message":"Пользователь: {\"ok\":1,\"nModified\":1,\"n\":1,\"updateDate\":\"2016-08-12T16:26:01\",\"updateOwner\":\"admin\"}","timestamp":"2016-08-12T11:26:01.983Z"}
+{"level":"info","message":"Пользователь: {\"status\":false,\"updateDate\":\"2016-08-12T16:26:03\",\"updateOwner\":\"admin\"}","timestamp":"2016-08-12T11:26:03.742Z"}
+{"level":"info","message":"Пользователь: {\"status\":true,\"updateDate\":\"2016-08-12T16:26:04\",\"updateOwner\":\"admin\"}","timestamp":"2016-08-12T11:26:04.941Z"}
+{"level":"info","message":"Пользователь: {\"group\":\"managers\",\"updateDate\":\"2016-08-12T16:26:10\",\"updateOwner\":\"admin\"}","timestamp":"2016-08-12T11:26:10.333Z"}
+{"level":"info","message":"Retrieving all user's","timestamp":"2016-08-12T11:29:46.692Z"}
+{"level":"info","message":"Удаление пользователя: 57a722b6ff0e5f7b34d6b805","timestamp":"2016-08-12T11:39:20.379Z"}
+{"level":"info","message":"Adding user: {\"username\":\"cshlovjah\",\"password\":\"123\",\"confirmPassword\":\"123\",\"group\":\"administrators\",\"boxId\":\"unknown\",\"fio\":\"Иван Иванович Иванов\",\"status\":true,\"description\":\"Пользователь\",\"createOwner\":null,\"updateOwner\":null}","timestamp":"2016-08-12T11:39:40.917Z"}
+{"level":"info","message":"Retrieving all user's","timestamp":"2016-08-12T11:39:51.050Z"}
+{"level":"info","message":"Пользователь: {\"group\":\"managers\",\"updateDate\":\"2016-08-12T16:39:56\",\"updateOwner\":\"admin\"}","timestamp":"2016-08-12T11:39:56.287Z"}
+{"level":"info","message":"Пользователь: {\"ok\":1,\"nModified\":1,\"n\":1,\"updateDate\":\"2016-08-12T16:40:04\",\"updateOwner\":\"admin\"}","timestamp":"2016-08-12T11:40:04.047Z"}
+{"level":"info","message":"Retrieving All Resource's:","timestamp":"2016-08-12T11:40:08.659Z"}
+{"level":"info","message":"Current user: 57878b994230774e3167f6e1","timestamp":"2016-08-12T11:40:08.661Z"}
+{"level":"info","message":"Retrieving All event's:","timestamp":"2016-08-12T11:40:08.661Z"}
+{"level":"info","message":"Current user: 57878b994230774e3167f6e1","timestamp":"2016-08-12T11:40:10.022Z"}
+{"level":"info","message":"Retrieving All event's:","timestamp":"2016-08-12T11:40:10.022Z"}
+{"level":"info","message":"Retrieving all user's","timestamp":"2016-08-12T11:40:12.743Z"}
+{"level":"info","message":"Пользователь: {\"group\":\"carMechanics\",\"updateDate\":\"2016-08-12T16:40:16\",\"updateOwner\":\"admin\"}","timestamp":"2016-08-12T11:40:16.381Z"}
+{"level":"info","message":"Retrieving All Resource's:","timestamp":"2016-08-12T11:40:18.578Z"}
+{"level":"info","message":"Current user: 57878b994230774e3167f6e1","timestamp":"2016-08-12T11:40:18.579Z"}
+{"level":"info","message":"Retrieving All event's:","timestamp":"2016-08-12T11:40:18.579Z"}
+{"level":"info","message":"Retrieving all user's","timestamp":"2016-08-12T11:40:19.725Z"}
+{"level":"info","message":"Обновить пользователя: 57adb57caec344596d10a4c4","timestamp":"2016-08-12T11:40:25.693Z"}
+{"level":"info","message":"{\"_id\":\"57adb57caec344596d10a4c4\",\"username\":\"cshlovjah\",\"group\":\"carMechanics\",\"boxId\":\"unknown\",\"fio\":\"Иван Иванович Иванов\",\"status\":\"true\",\"description\":\"Пользователь\",\"createOwner\":\"admin\",\"createDate\":\"2016-08-12T16:39:40\",\"updateDate\":\"2016-08-12T16:40:16\",\"updateOwner\":\"admin\",\"password\":\"123\",\"confirmPassword\":\"123\",\"false\":{\"patch\":true}}","timestamp":"2016-08-12T11:40:25.693Z"}
+{"level":"info","message":"Retrieving All Resource's:","timestamp":"2016-08-12T11:40:27.924Z"}
+{"level":"info","message":"Current user: 57878b994230774e3167f6e1","timestamp":"2016-08-12T11:40:27.929Z"}
+{"level":"info","message":"Retrieving All event's:","timestamp":"2016-08-12T11:40:27.929Z"}
+{"level":"info","message":"Retrieving all user's","timestamp":"2016-08-12T11:40:29.025Z"}
+{"level":"info","message":"Retrieving all user's","timestamp":"2016-08-12T11:43:46.184Z"}
+{"level":"info","message":"Retrieving all user's","timestamp":"2016-08-12T11:43:47.234Z"}
+{"level":"info","message":"Retrieving All Resource's:","timestamp":"2016-08-12T11:48:14.471Z"}
+{"level":"info","message":"Current user: 57878b994230774e3167f6e1","timestamp":"2016-08-12T11:48:14.480Z"}
+{"level":"info","message":"Retrieving All event's:","timestamp":"2016-08-12T11:48:14.480Z"}
+{"level":"info","message":"Retrieving all user's","timestamp":"2016-08-12T11:48:16.042Z"}
+{"level":"info","message":"Удаление пользователя: 57adb57caec344596d10a4c4","timestamp":"2016-08-12T11:48:44.423Z"}
+{"level":"info","message":"Retrieving All Resource's:","timestamp":"2016-08-12T11:49:37.563Z"}
+{"level":"info","message":"Current user: 57878b994230774e3167f6e1","timestamp":"2016-08-12T11:49:37.571Z"}
+{"level":"info","message":"Retrieving All event's:","timestamp":"2016-08-12T11:49:37.571Z"}
+{"level":"info","message":"Retrieving all user's","timestamp":"2016-08-12T11:49:38.989Z"}
+{"level":"info","message":"Adding user: {\"username\":\"adm\",\"password\":\"123\",\"confirmPassword\":\"123\",\"group\":\"new\",\"boxId\":\"unknown\",\"fio\":\"Иван Иванович Иванов\",\"status\":true,\"description\":\"Пользователь\",\"createOwner\":null,\"updateOwner\":null}","timestamp":"2016-08-12T11:49:49.347Z"}
+{"level":"info","message":"Adding user: {\"username\":\"adm\",\"password\":\"123\",\"confirmPassword\":\"123\",\"group\":\"managers\",\"boxId\":\"unknown\",\"fio\":\"Иван Иванович Иванов\",\"status\":true,\"description\":\"Пользователь\",\"createOwner\":null,\"updateOwner\":null,\"ok\":1,\"n\":1}","timestamp":"2016-08-12T11:49:55.039Z"}
+{"level":"info","message":"Retrieving all user's","timestamp":"2016-08-12T11:50:03.976Z"}
+{"level":"info","message":"Retrieving all user's","timestamp":"2016-08-12T11:50:04.577Z"}
+{"level":"info","message":"Retrieving All Resource's:","timestamp":"2016-08-12T11:50:32.522Z"}
+{"level":"info","message":"Current user: 57878b994230774e3167f6e1","timestamp":"2016-08-12T11:50:32.524Z"}
+{"level":"info","message":"Retrieving All event's:","timestamp":"2016-08-12T11:50:32.524Z"}
+{"level":"info","message":"Retrieving all user's","timestamp":"2016-08-12T11:50:33.873Z"}
+{"level":"info","message":"Удаление пользователя: 57adb7ddcc1a7db947e6901a","timestamp":"2016-08-12T11:50:37.447Z"}
+{"level":"info","message":"Retrieving All Resource's:","timestamp":"2016-08-12T11:51:26.067Z"}
+{"level":"info","message":"Current user: 57878b994230774e3167f6e1","timestamp":"2016-08-12T11:51:26.075Z"}
+{"level":"info","message":"Retrieving All event's:","timestamp":"2016-08-12T11:51:26.075Z"}
+{"level":"info","message":"Retrieving all user's","timestamp":"2016-08-12T11:51:30.368Z"}
+{"level":"info","message":"Adding user: {\"username\":\"adm\",\"password\":\"123\",\"confirmPassword\":\"123\",\"group\":\"carMechanics\",\"boxId\":\"unknown\",\"fio\":\"Иван Иванович Иванов\",\"status\":true,\"description\":\"Пользователь\",\"createOwner\":null,\"updateOwner\":null}","timestamp":"2016-08-12T11:51:37.283Z"}
+{"level":"info","message":"Retrieving All Resource's:","timestamp":"2016-08-12T11:51:46.322Z"}
+{"level":"info","message":"Current user: 57878b994230774e3167f6e1","timestamp":"2016-08-12T11:51:46.326Z"}
+{"level":"info","message":"Retrieving All event's:","timestamp":"2016-08-12T11:51:46.326Z"}
+{"level":"info","message":"Retrieving all user's","timestamp":"2016-08-12T11:51:48.216Z"}
+{"level":"info","message":"Retrieving All Resource's:","timestamp":"2016-08-12T11:51:56.396Z"}
+{"level":"info","message":"Current user: 57878b994230774e3167f6e1","timestamp":"2016-08-12T11:51:56.407Z"}
+{"level":"info","message":"Retrieving All event's:","timestamp":"2016-08-12T11:51:56.407Z"}
+{"level":"info","message":"Retrieving all user's","timestamp":"2016-08-12T11:51:57.674Z"}
+{"level":"info","message":"Retrieving All Resource's:","timestamp":"2016-08-12T11:52:03.321Z"}
+{"level":"info","message":"Current user: 57878b994230774e3167f6e1","timestamp":"2016-08-12T11:52:03.325Z"}
+{"level":"info","message":"Retrieving All event's:","timestamp":"2016-08-12T11:52:03.325Z"}
+{"level":"info","message":"Current user: 57878b994230774e3167f6e1","timestamp":"2016-08-12T11:52:04.526Z"}
+{"level":"info","message":"Retrieving All event's:","timestamp":"2016-08-12T11:52:04.526Z"}
+{"level":"info","message":"Retrieving all user's","timestamp":"2016-08-12T11:52:05.530Z"}
+{"level":"info","message":"Пользователь: {\"group\":\"managers\",\"updateDate\":\"2016-08-12T16:52:08\",\"updateOwner\":\"admin\"}","timestamp":"2016-08-12T11:52:08.992Z"}
+{"level":"info","message":"Пользователь: {\"ok\":1,\"nModified\":1,\"n\":1,\"updateDate\":\"2016-08-12T16:52:16\",\"updateOwner\":\"admin\"}","timestamp":"2016-08-12T11:52:16.753Z"}
+{"level":"info","message":"Retrieving All Resource's:","timestamp":"2016-08-12T11:52:19.558Z"}
+{"level":"info","message":"Current user: 57878b994230774e3167f6e1","timestamp":"2016-08-12T11:52:19.561Z"}
+{"level":"info","message":"Retrieving All event's:","timestamp":"2016-08-12T11:52:19.561Z"}
+{"level":"info","message":"Retrieving all user's","timestamp":"2016-08-12T11:52:21.443Z"}
+{"level":"info","message":"Retrieving All Resource's:","timestamp":"2016-08-12T11:53:26.027Z"}
+{"level":"info","message":"Current user: 57878b994230774e3167f6e1","timestamp":"2016-08-12T11:53:26.034Z"}
+{"level":"info","message":"Retrieving All event's:","timestamp":"2016-08-12T11:53:26.034Z"}
+{"level":"info","message":"Retrieving all user's","timestamp":"2016-08-12T11:53:30.436Z"}
+{"level":"info","message":"Retrieving All Resource's:","timestamp":"2016-08-12T11:54:11.692Z"}
+{"level":"info","message":"Current user: 57878b994230774e3167f6e1","timestamp":"2016-08-12T11:54:11.699Z"}
+{"level":"info","message":"Retrieving All event's:","timestamp":"2016-08-12T11:54:11.699Z"}
+{"level":"info","message":"Retrieving all user's","timestamp":"2016-08-12T11:54:16.046Z"}
+{"level":"info","message":"Retrieving All Resource's:","timestamp":"2016-08-12T11:54:31.839Z"}
+{"level":"info","message":"Current user: 57878b994230774e3167f6e1","timestamp":"2016-08-12T11:54:31.846Z"}
+{"level":"info","message":"Retrieving All event's:","timestamp":"2016-08-12T11:54:31.846Z"}
+{"level":"info","message":"Retrieving all user's","timestamp":"2016-08-12T11:54:33.692Z"}
+{"level":"info","message":"Retrieving All Resource's:","timestamp":"2016-08-12T11:56:25.690Z"}
+{"level":"info","message":"Current user: 57878b994230774e3167f6e1","timestamp":"2016-08-12T11:56:25.698Z"}
+{"level":"info","message":"Retrieving All event's:","timestamp":"2016-08-12T11:56:25.698Z"}
+{"level":"info","message":"Retrieving all user's","timestamp":"2016-08-12T11:56:28.691Z"}
+{"level":"info","message":"Retrieving All Resource's:","timestamp":"2016-08-12T11:56:34.710Z"}
+{"level":"info","message":"Current user: 57878b994230774e3167f6e1","timestamp":"2016-08-12T11:56:34.711Z"}
+{"level":"info","message":"Retrieving All event's:","timestamp":"2016-08-12T11:56:34.711Z"}
+{"level":"info","message":"Retrieving all user's","timestamp":"2016-08-12T11:56:35.988Z"}
+{"level":"info","message":"Retrieving all user's","timestamp":"2016-08-12T11:56:51.930Z"}
+{"level":"info","message":"Retrieving All Resource's:","timestamp":"2016-08-12T11:57:16.606Z"}
+{"level":"info","message":"Current user: 57878b994230774e3167f6e1","timestamp":"2016-08-12T11:57:16.614Z"}
+{"level":"info","message":"Retrieving All event's:","timestamp":"2016-08-12T11:57:16.614Z"}
+{"level":"info","message":"Retrieving all user's","timestamp":"2016-08-12T11:57:17.989Z"}
+{"level":"info","message":"Retrieving all user's","timestamp":"2016-08-12T12:33:19.075Z"}

@@ -14,6 +14,7 @@ router.get('/:id', user.findUserById);
 router.post('/', user.addUser);
 router.put('/:id', user.updateUser);
 router.patch('/:id', user.updateOnePropertyUser);
+router.delete('/:id', utilz.god);
 router.delete('/:id', user.deleteUser);
 
 module.exports = router;

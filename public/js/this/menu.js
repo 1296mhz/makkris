@@ -12,9 +12,6 @@ $('.user-control').on('click', function () {
     // mainFrame.addFrame('mainframe','user-table');
     $('#mainframe').append("<div id='user-table'></div>");
     var user = new User();
-
-
-
     user.pageableTable('user-table');
 
 });

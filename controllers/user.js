@@ -129,7 +129,7 @@ exports.updateUser = function (req, res) {
                         username: req.body.username,
                         fio: req.body.fio,
                         group: req.body.group,
-                        boxId: req.body.boxId,
+                        boxId: 'all',
                         status: req.body.status,
                         description: req.body.description,
                         updateOwner: req.user.username,

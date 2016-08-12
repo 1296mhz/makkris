@@ -4,7 +4,7 @@
 var moment = require('moment');
 //Вспомогательные утилиты
 function Utilz() {
-}
+};
 
 //Генерация пятизначного кода
 Utilz.prototype.chargen = function () {
@@ -41,7 +41,7 @@ Utilz.prototype.maxNumber = function (array) {
 Utilz.prototype.nowDate = function () {
     var currentDate = moment().format().split('+');
     return currentDate[0];
-}
+};
 
 Utilz.prototype.isLoggedIn = function (req, res, next) {
         if (!req.user) {
@@ -58,5 +58,16 @@ Utilz.prototype.isLoggedIn = function (req, res, next) {
         }
     };
 
+Utilz.prototype.god = function (req, res, next) {
+            if(req.params.id == '57878b994230774e3167f6e1'){
+                console.log('Is God!');
+                res.render('index', {user: req.user, title: "Панель управления"});
+            }else{
+                console.log(": "+req.params.id)
+                console.log("All right!");
+                return next();
+            }
+ 
+};
 
 module.exports = Utilz;
